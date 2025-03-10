@@ -10,7 +10,7 @@ allow_math: true
 
 ## Session 1: 4 Mar
 
-### Notes
+### Notes (In class)
 
 This is the first class that we had for creative coding, our lecturer introduced p5, a javascript web editor. Here's some notes of basic coding:
 
@@ -25,6 +25,60 @@ This is the first class that we had for creative coding, our lecturer introduced
 9. everything start at zero
 10. understand each line of the code will help us understand how to code
 11. str = string
+
+---
+
+### Understanding the _for_ loop
+
+A _for_ loop in Javascript consists three parts (initialization, condition, and update). They usually appear together in a single line to control the loop's behaviour.
+
+![for loop syntax](/static/w01s1/for%20loop%20syntax.png)
+
+for (initialization; condition; update)
+
+for (**starting point, ending point** _(loop runs while this is true)_, **how it moves** _(change the loop variable each time the loop runs)_)
+
+Example 1
+
+    for (let i = 0; i < 5; i++)
+
+    It wil start from 0 and increase 1 each time until 4
+
+Example 2
+
+    for (let i = 2; i < total_squares - 2; i += 2)
+
+    It will start from 2 and stop 2 columns early and skips every other column
+
+---
+
+### Undestanding _frameCount_ and _frameRate_?
+
+- frameCount
+
+  Count how many frames have passed since the sktech started, increases by 1 per frame
+
+- frameRate
+
+  Control how many frames per second (FPS) the sketch runs. Default = 60 FPS
+
+Example
+
+    function setup() {
+        frameRate(30);
+        }
+
+    slow down animation (30 FPS instead of 60)
+
+---
+
+### What is _const_ ?
+
+const = constant, a fixed variable that **cannot be change after it's declared**. it is best used for values that stay the same throughout the code.
+
+- **Example**
+  - const total_sqaure = 10
+  - const total_rows = 6
 
 ### Homework
 
