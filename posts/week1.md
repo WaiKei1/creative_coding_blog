@@ -1,14 +1,14 @@
 ---
-title: Weekly Study Posts!
+title: Week 1
 published_at: 2025-03-04
-snippet: A summary of what I've learned each week, including notes and homework.
+snippet: trying to understand the basic
 disable_html_sanitization: true
 allow_math: true
 ---
 
 # Week 1
 
-## Notes (In class)
+## Notes
 
 This is the first class that we had for creative coding, our lecturer introduced p5, a javascript web editor. Here's some notes of basic coding:
 
@@ -49,6 +49,50 @@ for (**starting point, ending point** _(loop runs while this is true)_, **how it
     * It will start from 2 and stop 2 columns early and skips every other column
 
 ---
+
+### Understanding forEach Method
+
+An array method that executes a provided function once for each array elements. (Specifically for arrays)
+
+**Syntax:**
+
+array.forEach(function(currentValue, index, arr), thisValue)
+
+**Example**
+
+    const fruits = ['apple', 'banana', 'cherry'];
+
+    fruits.forEach(function(fruit, index))
+
+### Understanding while loop
+
+The while loop continues to execute as long as the specified condition evaluates to true.
+
+Syntax:
+
+while (condition) {
+// code to be executed
+}
+
+Example:
+let i = 0;
+while (i < fruits.length)
+
+### When to use them:
+
+- Use _forEach_ when:
+
+  - you need to iterate through all elements of an array
+  - don't need to break or skip iterations
+
+- Use _for_ loop when:
+
+  - you need more control over the iteration
+  - might need to skip iterations
+  - working with non-array iterables
+
+- Use _while_ loop when:
+  - the number of iterations is unknown beforehand
 
 ### Undestanding _frameCount_ and _frameRate_?
 
@@ -246,280 +290,4 @@ This interactive website features a flipping page animation where users can clic
 
 I want to go with the interactivity concept by making the colors change when the user clicks on a shape.
 
----
-
-# Week 2
-
-## Notes (In class)
-
-**Aesthetic Register**
-
-Aesthetic Register is more specific concept that refer to the tone, style, or mode inwhich an aesthetic is expressed or communicates. It is about the delivery / expression of an aesthetic, rather than the aesthetic itself. Aesthetic (noun) defines the overall look and feel and aesthetic register (noun, verb) defines how that look and feel is expressed or experienced.
-
-It helps us to decide the tone of the work and communicate the ideas or emotions more effectively.
-
-**Kindred Spirit**
-
-- A best friend / soulmate / sidekick
-
-**Variables** (as symbolic names for values in your application)
-
-1. Declaring Variables
-
-with the keyworf
-
-**Function**
-
-- function setup = happen once and only once (the moment the sketch begins)
-
-- function draw = happen forever "loop"
-
-**[Array](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Arrays)**
-
-An array is a special variable that can store multiple values in a single variable. (arrays use zero-based indexing, meaning the first item is at index 0)
-
-Example:
-
-let fruits = ["apple", "banana", "orange"];
-
-## Homework
-
-### Session 1: 11 Mar
-
-**My Kindred Spirit: Plushie Bear**
-
-For my AT1 project, I have chosen my plushie bear as my kindred spirit. This choice will perfectly embodies both cute and a personal connection to me.
-
-Here is how I will achieve cuteness in three domains:
-
-1. Cute Visual
-   A round, fluffy bear face wth big eyes in the middle of the canvas. The colour of the bear face will be soft brown pastel colours.
-
-- Techniques:
-
-  - Shape
-
-    1. Use ellipse/round shape to create the bear's face, ears and eyes.
-
-    2. Use arc/line for the bear's different expression (smiling, frowning, yawning, etc)
-
-  - Colours
-
-    - Bear Face
-
-      Soft pastel browns (face and ears)
-
-    - Details,
-
-    Black (nose, eyes), pink/yellow (for rection)
-
-    - Background Canvas
-
-    Change according to the bear's emotion
-
-2. Cute Sounds
-   Clicking on the bear's face will trigger different sound effects corresponding to its expressions.
-
-   For example:
-
-   - A yawning sound when the bear looks sleepy.
-   - A "pop" or "boop" sound for a surprised expression.
-
-- Techniques:
-  - sound library
-  - Make sure the sounds are short and match the expression
-
-3. Cute Interactions
-   When the mouse clicks on the bear face, it will change to different expressions, sound, and background colour
-
-- Techniques:
-  - mousePressed or mouseClicked to apply the clickling interaction
-  - Canvas background colour change when along with the expression after clicking
-
-Desciption of my plan:
-
-A screen size canvas and a round bear face will be in the middle. The expression will be neutral before clicking. When the user clicks at the bear's face, it will change to another emotional expression along with the certain sound effect. The background colour of the canvas will be change accordingly as well.
-
----
-
-### Session 2: 13 Mar
-
-- **What is the context of your kinship?**
-
-My plushie bear has been with me for a long time. Personally, she is not just a stuffed toy but a cherished companion, gifted to me by my family and blessed with their love. Whenever I need emotional support, she is always there. Hugging her provides a sense of security and comfort, easing my worries and making me feel safe.
-
-- **What is your common purpose?**
-
-Both my plushie bear and I share the purpose of bringing comfort and joy. Her cuteness has a healing effect on me, lifting my mood whenever I’m feeling down. That’s why I want to create something that represents my appreciation for her. Through my sketch, I aim to capture her cuteness and how meaningful she is to me.
-
-- **Who or what is your shared challenge / adversary?**
-
-Our shared challenge is stress and exhaustion. As my companion, she has always been there to help me face challenges, whether it’s meeting deadlines or dealing with overwhelming days. She is my escape from negativity, providing me with calmness, softness, and happiness.
-
----
-
-As I mentioned above, the bear plushie play the role of a campanion in my life. My sketch offering reflects this bond, the changable expression just like how she acts and lift my spirits in real life.
-
-- **How my plushie bear relates to the visual elements**
-
-She meant to be cute and comforting. The cuteness of its visual heals me. Therefore my visual will focus on crating a simple, warm, friendly and approachable aesthetic that reflects the meaningful characteristic that she had in my life. The visual approach that I have to express the cuteness and friendly are using the pastal colour, round, fluffy features. Through these features, she might recognize the bear face is her and she might realize the expression and the reaction are what she make me feel in real life.
-
-- **How my plushie bear relates to the sonic elements**
-
-Even though my plushie bear can't really make sounds, but I image that if she could express herself, she would do in a gentle way. These sound effects would reflect how she will react to when she had that specific emotions.
-
-- **How my plushie bear relates to the interactive elements**
-
-The interactivity also bring her to life. She would respond to my touch with different emotion just like how my mood changes when I hug her.
-
-# Week 3
-
-## Notes (In class)
-
-Functions (essentially behaviours) are like recipe,
-arguements are ingredients,
-if you give a pumpkin recipe and pumpkin, it will make a pumpkin cake
-
-Variables are data
-
-Differences between variables and attributes, attributes always live with an object
-
-Object have both data and behaviour
-
-Example:
-const _sqr_ _(objects)_ = { x : 150, y : 150, s : 100 } (three attributes)
-
-Classes (defining the shape of the object)
-parameters
-
-vector: start from the origans and like an arrow
-
-forEach, change the center of the gravity could change the velocity of the squares
-
-arrow in js dealing with a function definition
-
-Code Style
-
-Code Comment
-
-**Differences between the different numbers of equal signs (=,==,===)**
-
-1. Single equal (=): assignment
-
-assign a value to a variable
-
-Example:
-
-let x = 0;
-
-bgColors = [#xxxxx]
-
-2. Double equals (==): loose comparison
-
-compare values after type conversion
-
-3. Triple equals (===):
-
-## Homework
-
-### Session 1: 18 Mar
-
-- **With regard to your AT1, and using embedded p5 sketches, explain how you plan on achieving the aesthetic register of cute:**
-
-  - Visually
-
-  - Sonically
-
-  - Interactively
-
-### Session 2: 20 Mar
-
-Example
-
----
-
-![a drippy lemon](logo.svg)
-
-^ images are written like this: `![description](file_path/file_name.png)`
-
-## This is h2
-
-_This is italic._[^1]
-
-[^1]: This is a footnote, _which can also be italic_.
-
-**This is bold.**
-
-Hyperlinks can be written like this: `[text](https://URL)`
-
-You can find a markdown cheat-sheet [here](https://www.markdownguide.org/cheat-sheet/).
-
-## Maths:
-
-... which can be written inline, like this: $\{ x, y, z \} \in \N$
-
-... or block, like this:
-
-$$ x^2 + y^2 = z^2 $$
-
-Visit [ $\KaTeX$ ](https://katex.org/docs/supported#fractions-and-binomials) for more information about writing maths.
-
-## Embedding video:
-
-<iframe id="coding_train_video" src="https://www.youtube.com/embed/rI_y2GAlQFM?si=RDgjkpunxk1mQzMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<script type="module">
-
-    console.log (`hello world! 🚀`)
-
-    const iframe  = document.getElementById (`coding_train_video`)
-    iframe.width  = iframe.parentNode.scrollWidth
-    iframe.height = iframe.width * 9 / 16
-
-</script>
-
-## Embedding p5 sketches:
-
-<iframe id="falling_falling" src="https://editor.p5js.org/capogreco/full/Fkg05m7aA"></iframe>
-
-<script type="module">
-
-    const iframe  = document.getElementById (`falling_falling`)
-    iframe.width  = iframe.parentNode.scrollWidth
-    iframe.height = iframe.width * 9 / 16 + 42
-
-</script>
-
-## Canvas API
-
-<canvas id="canvas_example"></canvas>
-
-<script type="module">
-    const cnv = document.getElementById (`canvas_example`)
-    cnv.width = cnv.parentNode.scrollWidth
-    cnv.height = cnv.width * 9 / 16 
-
-    const ctx = cnv.getContext (`2d`)
-    const pos = {
-        x: -100,
-        y: cnv.height / 2 - 50
-    }
-    
-    function draw_frame () {
-        ctx.fillStyle = `turquoise`
-        ctx.fillRect (0, 0, cnv.width, cnv.height)
-
-        ctx.fillStyle = `hotpink`
-        ctx.fillRect (pos.x, pos.y, 100, 100)
-
-        pos.x += 2
-
-        if (pos.x > cnv.width) {
-            pos.x = -100
-        }
-
-        requestAnimationFrame (draw_frame)
-    }
-
-    draw_frame ()
-</script>
+Here is the sketch that

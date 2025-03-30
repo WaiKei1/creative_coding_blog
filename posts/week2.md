@@ -1,7 +1,7 @@
 ---
-title: Weekly Study Posts!
+title: Week 1
 published_at: 2025-03-04
-snippet: A summary of what I've learned each week, including notes and homework.
+snippet: trying to understand the basic
 disable_html_sanitization: true
 allow_math: true
 ---
