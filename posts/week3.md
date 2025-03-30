@@ -1,5 +1,5 @@
 ---
-title: Week 1
+title: Week 3
 published_at: 2025-03-04
 snippet: trying to understand the basic
 disable_html_sanitization: true
@@ -10,7 +10,9 @@ allow_math: true
 
 ## Notes (In class)
 
-Functions (essentially behaviours) are like recipe,
+**Functions**
+
+(essentially behaviours) are like recipe,
 arguements are ingredients,
 if you give a pumpkin recipe and pumpkin, it will make a pumpkin cake
 
@@ -42,7 +44,7 @@ Code Comment
 
 assign a value to a variable
 
-Example:
+**Example:**
 
 let x = 0;
 
