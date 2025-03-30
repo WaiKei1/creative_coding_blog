@@ -290,4 +290,12 @@ This interactive website features a flipping page animation where users can clic
 
 I want to go with the interactivity concept by making the colors change when the user clicks on a shape.
 
-Here is the sketch that
+<iframe id="homework1b: clicking interaction" src="https://editor.p5js.org/WaiKei1/full/IGGrg7KYP"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`homework1b: clicking interaction`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
