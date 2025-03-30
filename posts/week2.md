@@ -1,5 +1,5 @@
 ---
-title: Week 1
+title: Week 2
 published_at: 2025-03-04
 snippet: trying to understand the basic
 disable_html_sanitization: true
