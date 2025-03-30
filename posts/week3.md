@@ -1,7 +1,7 @@
 ---
 title: Week 3
 published_at: 2025-03-04
-snippet: trying to understand the basic
+snippet:
 disable_html_sanitization: true
 allow_math: true
 ---
