@@ -1,14 +1,15 @@
 ---
 title: Week 1
 published_at: 2025-03-04
-snippet: trying to understand the basic
+snippet: try to understand the basic
 disable_html_sanitization: true
 allow_math: true
 ---
 
-# Week 1
+| [W2](https://waikei1-creative-co-63.deno.dev/week2) | [W3](https://waikei1-creative-co-63.deno.dev/week3) | [W4](https://waikei1-creative-co-63.deno.dev/week4) |
+| --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
 
-## Notes
+# Notes
 
 This is the first class that we had for creative coding, our lecturer introduced p5, a javascript web editor. Here's some notes of basic coding:
 
@@ -64,43 +65,50 @@ array.forEach(function(currentValue, index, arr), thisValue)
 
     fruits.forEach(function(fruit, index))
 
+---
+
 ### Understanding while loop
 
 The while loop continues to execute as long as the specified condition evaluates to true.
 
-Syntax:
+**Syntax:**
 
-while (condition) {
-// code to be executed
-}
+     while (condition) {
+    // code to be executed
+    }
 
-Example:
-let i = 0;
-while (i < fruits.length)
+**Example:**
+
+    let i = 0;
+    while (i < fruits.length)
+
+---
 
 ### When to use them:
 
-- Use _forEach_ when:
+- Use **_forEach_** when:
 
   - you need to iterate through all elements of an array
   - don't need to break or skip iterations
 
-- Use _for_ loop when:
+- Use **_for_ loop** when:
 
   - you need more control over the iteration
   - might need to skip iterations
   - working with non-array iterables
 
-- Use _while_ loop when:
+- Use **_while_** loop when:
   - the number of iterations is unknown beforehand
+
+---
 
 ### Undestanding _frameCount_ and _frameRate_?
 
-- frameCount
+- **frameCount**
 
   Count how many frames have passed since the sktech started, increases by 1 per frame
 
-- frameRate
+- **frameRate**
 
   Control how many frames per second (FPS) the sketch runs. Default = 60 FPS
 
@@ -118,9 +126,10 @@ while (i < fruits.length)
 
 const = constant, a fixed variable that **cannot be change after it's declared**. it is best used for values that stay the same throughout the code.
 
-- **Example**
-  - const total_sqaure = 10
-  - const total_rows = 6
+**Example**
+
+- const total_sqaure = 10
+- const total_rows = 6
 
 ---
 
@@ -130,7 +139,7 @@ const = constant, a fixed variable that **cannot be change after it's declared**
 - _const_ stores fixed values that don't change
 - _frameCount_ counts frames; _frameRate_ controls speed
 
-## Homework
+# Homework
 
 ### Session 1: 4 Mar
 
@@ -151,6 +160,8 @@ To achive this, I used nested for loops with the let keyword. Here's how it work
 The inner loop starts at 0, ends at 6, and increments by 1 for each row. However, after running the code, I noticed that the grid looked the same as before. This made me realize that I needed to refine the logic for positioning and sizing the squares.
 
 The 0.5 in (i + 0.5) and (j + 0.5) is used to center the squares within each grid cell. Without +0.5, the square would be positioned at the top-left corner of each grid cell.
+
+---
 
 **[Attempt 2:](https://editor.p5js.org/WaiKei1/full/6l36fWFn-)**
 
@@ -288,7 +299,7 @@ This interactive website features a flipping page animation where users can clic
 
 ![homework3](/static/w01s2/homework3.png)
 
-I want to go with the interactivity concept by making the colors change when the user clicks on a shape.
+I chose to explore the interactive concept (mouseClicked) by making the colours change when user clicks on it.
 
 <iframe id="homework1b: clicking interaction" src="https://editor.p5js.org/WaiKei1/full/IGGrg7KYP"></iframe>
 
@@ -299,3 +310,19 @@ I want to go with the interactivity concept by making the colors change when the
     iframe.height = iframe.width * 9 / 16 + 42
 
 </script>
+
+To implement this, I first drew a circle at the center of the canvas with a diameter of 50 pixels. I then assigned the initial circle color to white, ensuring that it appears in this default state.
+
+Next, I created a mouseClicked function that checks the current color of the circle—if it is white, it changes to orange when clicked, and vice versa.
+
+The resource that I used in this concept is the [mouseClicked](https://p5js.org/reference/p5/mouseClicked/) reference from p5js.
+
+---
+
+## Quick Links
+
+- [Week 2](https://waikei1-creative-co-63.deno.dev/week2)
+- [Week 3](https://waikei1-creative-co-63.deno.dev/week3)
+- [Week 4](https://waikei1-creative-co-63.deno.dev/week4)
+
+---

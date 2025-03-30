@@ -6,9 +6,10 @@ disable_html_sanitization: true
 allow_math: true
 ---
 
-# Week 2
+| [W1](https://waikei1-creative-co-63.deno.dev/week1) | [W3](https://waikei1-creative-co-63.deno.dev/week3) | [W4](https://waikei1-creative-co-63.deno.dev/week4) |
+| --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
 
-## Notes (In class)
+# Notes
 
 **Aesthetic Register**
 
