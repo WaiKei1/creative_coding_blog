@@ -6,9 +6,11 @@ disable_html_sanitization: true
 allow_math: true
 ---
 
-# Week 3
+| [W1](https://waikei1-creative-co-63.deno.dev/week1) | [W2](https://waikei1-creative-co-63.deno.dev/week2) | [W4](https://waikei1-creative-co-63.deno.dev/week4) |
+| --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
+| [A1](https://waikei1-creative-co-63.deno.dev/A1)    |
 
-## Notes (In class)
+# Notes (In class)
 
 **Functions**
 
@@ -60,15 +62,31 @@ compare values after type conversion
 
 ### Session 1: 18 Mar
 
-- **With regard to your AT1, and using embedded p5 sketches, explain how you plan on achieving the aesthetic register of cute:**
+![homework3a_1](/static/w03s1/homework3a_1.png)
 
-  - Visually
+**Visual**
 
-  - Sonically
+My sketch brings my plushie bear to life through three emotional states—neutral, sleeping, and happy—each with a soft pastel color palette. I’ve designed additional elements for each scene, such as floating "ZZZ" symbols for the sleeping state and balloons for the happy state, though I haven’t imported all of them yet.
 
-  - Interactively
+**Sonic**
+
+Since my plushie can’t actually speak, I’ve imagined gentle, baby-like sounds to express each emotion. The audio is designed to feel like a cute, playful reaction, as if she’s responding with tiny coos and hums
+
+**Interactivity**
+
+Interaction is simple—clicking cycles through her expressions, mimicking how her mood changes when I play with her in real life. I’m still working on adding looping animations in the background (like ZZZs for her sleeping state) to make it feel even more alive and cute.
 
 ### Session 2: 20 Mar
+
+![homework3b_1](/static/w03s2/homework3b_1.png)
+
+Here's how my assignment 1 uses these concept:
+
+**1. Variables**
+
+I use
+
+![homework3b_2](/static/w03s2/homework3b_2.png)
 
 Example
 

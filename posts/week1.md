@@ -8,6 +8,7 @@ allow_math: true
 
 | [W2](https://waikei1-creative-co-63.deno.dev/week2) | [W3](https://waikei1-creative-co-63.deno.dev/week3) | [W4](https://waikei1-creative-co-63.deno.dev/week4) |
 | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
+| [A1](https://waikei1-creative-co-63.deno.dev/A1)    |
 
 # Notes
 
@@ -320,6 +321,14 @@ The resource that I used in this concept is the [mouseClicked](https://p5js.org/
 ---
 
 ## Quick Links
+
+### Assignments:
+
+- [Assignment 1: Cute!](https://waikei1-creative-co-63.deno.dev/A1)
+
+---
+
+### Weekly Study Journey:
 
 - [Week 2](https://waikei1-creative-co-63.deno.dev/week2)
 - [Week 3](https://waikei1-creative-co-63.deno.dev/week3)

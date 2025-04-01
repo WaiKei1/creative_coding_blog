@@ -1,6 +1,6 @@
 ---
 title: Week 2
-published_at: 2025-03-04
+published_at: 2025-03-11
 snippet: ideation of assignment 1
 disable_html_sanitization: true
 allow_math: true
@@ -8,6 +8,7 @@ allow_math: true
 
 | [W1](https://waikei1-creative-co-63.deno.dev/week1) | [W3](https://waikei1-creative-co-63.deno.dev/week3) | [W4](https://waikei1-creative-co-63.deno.dev/week4) |
 | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
+| [A1](https://waikei1-creative-co-63.deno.dev/A1)    |
 
 # Notes
 
@@ -17,21 +18,21 @@ Aesthetic Register is more specific concept that refer to the tone, style, or mo
 
 It helps us to decide the tone of the work and communicate the ideas or emotions more effectively.
 
+---
+
 **Kindred Spirit**
 
 - A best friend / soulmate / sidekick
 
-**Variables** (as symbolic names for values in your application)
-
-1. Declaring Variables
-
-with the keyworf
+---
 
 **Function**
 
 - function setup = happen once and only once (the moment the sketch begins)
 
 - function draw = happen forever "loop"
+
+---
 
 **[Array](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Arrays)**
 
@@ -41,9 +42,13 @@ Example:
 
 let fruits = ["apple", "banana", "orange"];
 
-## Homework
+---
+
+# Homework
 
 ### Session 1: 11 Mar
+
+![homework2a](/static/w02s1/homework2a.png)
 
 **My Kindred Spirit: Plushie Bear**
 
@@ -51,57 +56,75 @@ For my AT1 project, I have chosen my plushie bear as my kindred spirit. This cho
 
 Here is how I will achieve cuteness in three domains:
 
-1. Cute Visual
+1. **Cute Visual**
+
    A round, fluffy bear face wth big eyes in the middle of the canvas. The colour of the bear face will be soft brown pastel colours.
 
 - Techniques:
 
-  - Shape
-
-    1. Use ellipse/round shape to create the bear's face, ears and eyes.
-
-    2. Use arc/line for the bear's different expression (smiling, frowning, yawning, etc)
+  - Draw the Bear Expressions by using Procreate (Neutral, Sleeping, Happy)
 
   - Colours
 
     - Bear Face
 
-      Soft pastel browns (face and ears)
-
-    - Details,
-
-    Black (nose, eyes), pink/yellow (for rection)
+      Soft pastel browns
 
     - Background Canvas
 
     Change according to the bear's emotion
 
-2. Cute Sounds
+2. **Cute Sounds**
+
    Clicking on the bear's face will trigger different sound effects corresponding to its expressions.
 
    For example:
 
-   - A yawning sound when the bear looks sleepy.
-   - A "pop" or "boop" sound for a surprised expression.
+   - Neutral Expression: baby mumbling sound
+   - Happy Expression: baby giggling sound
+   - Sleeping Expression: Lullaby music
 
 - Techniques:
-  - sound library
+  - sound library [(Freesounds)](https://freesound.org/)
   - Make sure the sounds are short and match the expression
 
-3. Cute Interactions
+3. **Cute Interactions**
+
    When the mouse clicks on the bear face, it will change to different expressions, sound, and background colour
 
 - Techniques:
   - mousePressed or mouseClicked to apply the clickling interaction
   - Canvas background colour change when along with the expression after clicking
 
-Desciption of my plan:
+---
 
-A screen size canvas and a round bear face will be in the middle. The expression will be neutral before clicking. When the user clicks at the bear's face, it will change to another emotional expression along with the certain sound effect. The background colour of the canvas will be change accordingly as well.
+### A1: Ideation Sketch
+
+<iframe id="A1: Ideation Sketch" src="https://editor.p5js.org/WaiKei1/full/ELzwIInyR"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`A1: Ideation Sketch`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
+
+**Desciption of my plan:**
+
+The canvas will be sized to fit the screen, with a round bear face displayed in the center. Initially, the bear will have a neutral expression with a pink background. When the user clicks on the bear’s face, the expression will change to a different emotion, accompanied by a corresponding sound effect. The background color will also update to match the emotion. Other than that, the background will include some elements that related to each expressions, for example:
+
+- Screen 1 (Neutral): Pink background
+- Screen 2 (Sleeping): Blue background
+- Screen 3 (Happy): Yellow background
+
+Each click will cycle through these expressions in order, creating an interactive experience.
 
 ---
 
 ### Session 2: 13 Mar
+
+![homework2b](/static/w02s2/homework2b_1.png)
 
 - **What is the context of your kinship?**
 
@@ -117,11 +140,15 @@ Our shared challenge is stress and exhaustion. As my companion, she has always b
 
 ---
 
+![homework2b](/static/w02s2/homework2b_2.png)
+
 As I mentioned above, the bear plushie play the role of a campanion in my life. My sketch offering reflects this bond, the changable expression just like how she acts and lift my spirits in real life.
 
 - **How my plushie bear relates to the visual elements**
 
-She meant to be cute and comforting. The cuteness of its visual heals me. Therefore my visual will focus on crating a simple, warm, friendly and approachable aesthetic that reflects the meaningful characteristic that she had in my life. The visual approach that I have to express the cuteness and friendly are using the pastal colour, round, fluffy features. Through these features, she might recognize the bear face is her and she might realize the expression and the reaction are what she make me feel in real life.
+She meant to be cute and comforting. The cuteness of its visual heals me. Therefore my visual will focus on crating a simple, warm, friendly and approachable aesthetic that reflects the meaningful characteristic that she had in my life.
+
+The visual approach that I have to express the cuteness and friendly are using the pastal colour, round, fluffy features. Through these features, she might recognize the bear face is her and she might realize the expression and the reaction are what she make me feel in real life.
 
 - **How my plushie bear relates to the sonic elements**
 
@@ -130,3 +157,21 @@ Even though my plushie bear can't really make sounds, but I image that if she co
 - **How my plushie bear relates to the interactive elements**
 
 The interactivity also bring her to life. She would respond to my touch with different emotion just like how my mood changes when I hug her.
+
+---
+
+## Quick Links
+
+### Assignments:
+
+- [Assignment 1: Cute!](https://waikei1-creative-co-63.deno.dev/A1)
+
+---
+
+### Weekly Study Journey:
+
+- [Week 1](https://waikei1-creative-co-63.deno.dev/week1)
+- [Week 3](https://waikei1-creative-co-63.deno.dev/week3)
+- [Week 4](https://waikei1-creative-co-63.deno.dev/week4)
+
+---
