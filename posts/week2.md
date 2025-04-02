@@ -144,6 +144,18 @@ Our shared challenge is stress and exhaustion. As my companion, she has always b
 
 As I mentioned above, the bear plushie play the role of a campanion in my life. My sketch offering reflects this bond, the changable expression just like how she acts and lift my spirits in real life.
 
+### A1: Sketch 1 (Attempt 1)
+
+<iframe id="A1: Sketch 1 (Attempt 1)" src="https://editor.p5js.org/WaiKei1/full/6W820i-0B"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`A1: Sketch 1 (Attempt 1)`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
+
 - **How my plushie bear relates to the visual elements**
 
 She meant to be cute and comforting. The cuteness of its visual heals me. Therefore my visual will focus on crating a simple, warm, friendly and approachable aesthetic that reflects the meaningful characteristic that she had in my life.
@@ -157,6 +169,20 @@ Even though my plushie bear can't really make sounds, but I image that if she co
 - **How my plushie bear relates to the interactive elements**
 
 The interactivity also bring her to life. She would respond to my touch with different emotion just like how my mood changes when I hug her.
+
+---
+
+![homework2b](/static/w02s2/homework2b_3.png)
+
+<iframe id="Falling Falling" src="https://editor.p5js.org/WaiKei1/full/Yg8V2JyTa"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`Falling Falling`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
 
 ---
 
