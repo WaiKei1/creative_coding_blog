@@ -172,7 +172,7 @@ The interactivity also bring her to life. She would respond to my touch with dif
 
 ---
 
-![homework2b](/static/w02s2/homework2b_3.png)
+![homework2b_3](/static/w02s2/homework2b_3.png)
 
 <iframe id="Falling Falling" src="https://editor.p5js.org/WaiKei1/full/Yg8V2JyTa"></iframe>
 
@@ -183,6 +183,63 @@ The interactivity also bring her to life. She would respond to my touch with dif
     iframe.height = iframe.width * 9 / 16 + 42
 
 </script>
+
+**Code that I don't understand:**
+
+      // assign .curves attribute into faller
+        faller.curves = new Array (7).fill ().map (rand_curve)
+        faller.phase  = 0
+        fallers.push (Object.assign ({}, faller))
+        bg = rand_col ()
+      }
+
+      function draw() {
+        background (bg)
+        if (frameCount % 40 == 0) {
+          const new_faller = Object.assign ({}, faller)
+          new_faller.colours = [ bg, rand_col () ]
+          new_faller.curves = new Array (7).fill ().map (rand_curve)
+
+          fallers.unshift (new_faller)
+          bg = rand_col ()
+        }
+        const redundant = []
+        fallers.forEach ((f, i) => {
+          colorMode (RGB)
+          fill (lerpColor (f.colours[0], f.colours[1], f.phase))
+          beginShape ()
+          vertex (0, height)
+          f.start_points.forEach ((s, i) => {
+            const p = find_point (s, f.end_points[i], f.phase ** f.curves[i])
+            vertex (p.x, p.y)
+          })
+          vertex (width, height)
+          endShape ()
+          f.phase += 0.008
+          if (f.phase > 1) redundant.push (i)
+        })
+        redundant.forEach (n => fallers.splice (n, 1))
+      }
+
+      function find_point (start, end, phase) {
+        const delt = {
+          x: end.x - start.x,
+          y: end.y - start.y
+        }
+        const x = start.x + delt.x * phase
+        const y = start.y + delt.y * phase
+        return { x, y }
+      }
+
+      function rand_col () {
+        colorMode (HSB)
+        const h = floor (random () * 360)
+        return color (h, 100, 100)
+      }
+
+      function rand_curve () {
+        return random () * 2 + 1
+      }
 
 ---
 

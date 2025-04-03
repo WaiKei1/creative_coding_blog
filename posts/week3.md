@@ -1,6 +1,6 @@
 ---
 title: Week 3
-published_at: 2025-03-04
+published_at: 2025-03-18
 snippet:
 disable_html_sanitization: true
 allow_math: true
@@ -321,33 +321,33 @@ Here's how my assignment 1 uses these concept:
 
 ![homework3b_2](/static/w03s2/homework3b_2.png)
 
-<iframe id="A1" src="https://editor.p5js.org/WaiKei1/full/_lnmvflzo"></iframe>
+<iframe id="A1 Final" src="https://editor.p5js.org/WaiKei1/full/_lnmvflzo"></iframe>
 
 <script type="module">
 
-    const iframe  = document.getElementById (`A1`)
+    const iframe  = document.getElementById (`A1 Final`)
     iframe.width  = iframe.parentNode.scrollWidth
     iframe.height = iframe.width * 9 / 16 + 42
 
 </script>
 
-**how well did you achieve cuteness in the visual, sonic, and interactive domains?**
+**How well did you achieve cuteness in the visual, sonic, and interactive domains?**
 
 Overall, I believe I achieved cuteness quite well, especially in the visual and sonic aspects. The fluffy, rounded features and pastel color palette contribute to an overall soft and adorable aesthetic. For the sonic elements, I used baby-like sounds to mimic bear noises, making the character feel more childlike and endearing.
 
 In terms of interactivity, clicking allows users to cycle through different expressions, which adds engagement. Initially, I wanted to implement a dragging interaction for the sleeping expression, but due to time constraints, I couldn't manage to integrate it.
 
-**what communities and learning resources did you draw on to do the bulk of your learning for this project?**
+**What communities and learning resources did you draw on to do the bulk of your learning for this project?**
 
 For this project, I relied on several online resources, including MDN Web Docs, W3Schools, Stack Overflow, JavaScript.info, and p5.js references to deepen my understanding of key concepts. Additionally, I consulted ChatGPT and DeepSeek whenever I had extra questions or encountered challenges that I couldn't resolve on my own.
 
-**what aspects have you enjoyed the most about this process? What have you found to be most surprising?**
+**What aspects have you enjoyed the most about this process? What have you found to be most surprising?**
 
 I find coding similar to solving math problems. The most enjoyable part is the sense of achievement when I finally figure something out. Debugging and refining the logic can be frustrating, but that “aha” moment makes it all worthwhile.
 
 The most surprising aspect was realizing how much code efficiency matters. Initially, my code was quite lengthy, but applying classes and boolean logic made it more concise and effective. A great example is my Attempt 2 for A2, where restructuring the code significantly improved its readability and efficiency.
 
-**what aspects have you struggled with the most? What have you found the most confusing?**
+**What aspects have you struggled with the most? What have you found the most confusing?**
 
 One of my biggest challenges was implementing the looping background effect. It took me quite a while to get it working correctly, but through trial and error, I eventually figured it out. Debugging the logic and ensuring smooth transitions in animations was tricky, but solving it was very rewarding.
 
@@ -364,7 +364,7 @@ One of my biggest challenges was implementing the looping background effect. It 
 ### Weekly Study Journey:
 
 - [Week 1](https://waikei1-creative-co-63.deno.dev/week1)
-- [Week ]2(https://waikei1-creative-co-63.deno.dev/week2)
+- [Week 2](https://waikei1-creative-co-63.deno.dev/week2)
 - [Week 4](https://waikei1-creative-co-63.deno.dev/week4)
 
 ---

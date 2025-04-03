@@ -11,21 +11,3 @@ allow_math: true
 | [A1](https://waikei1-creative-co-63.deno.dev/A1)    |
 
 # Notes
-
-### Chaos
-
-utter disorder, randomness, confusion. unpredictable
-
-### Net Art
-
-Net Art (internet art), is art created specifically for and on the internet.
-
-### Glitch
-
-An error, malfunction. Glitch is also one of the beauty.
-
-### Beauty of the glitch
-
-### Chaotic Aesthetic Register
-
-A visual and conceptual style that embraces disorder, unpredictability and dissonance.
