@@ -28,11 +28,27 @@ This is the first class that we had for creative coding, our lecturer introduced
 
 ---
 
+### Comments vs Console.log
+
+1. **Comments (// or /\* \*/)**
+
+   Human-readable notes, this will completely ignored by computer.
+
+2. **Console.log**
+
+   Debugging/output during execution. It will prints to browser's console or terminal. We use it as debugging program flow and showing intermediate results.
+
+   Keep them if they log critical info you might need later (e.g., tracking performance, errors).
+
+   Remove them if they were temorary checks and the project is finished/deployed (to avoid cluttering the console)
+
+---
+
 ### Understanding the _for_ loop
 
 A _for_ loop in Javascript consists three parts (initialization, condition, and update). They usually appear together in a single line to control the loop's behaviour.
 
-![for loop syntax](/static/w01s1/for%20loop%20syntax.png)
+![for loop syntax](/w01s1/forloop.png)
 
 for (initialization; condition; update)
 
@@ -107,7 +123,7 @@ The while loop continues to execute as long as the specified condition evaluates
 
 - **frameCount**
 
-  Count how many frames have passed since the sktech started, increases by 1 per frame
+  Count how many frames have passed since the sketch started, increases by 1 per frame. The default frame rate is 60 (FPS), so 1 sec will have 60 frame counts.
 
 - **frameRate**
 
@@ -144,11 +160,11 @@ const = constant, a fixed variable that **cannot be change after it's declared**
 
 ### Session 1: 4 Mar
 
-![homework 1.](/static/w01s1/homework%201..png)
+![homework 1.](/w01s1/homework%201..png)
 
 **Attempt 1:**
 
-![grid loop attempt 1](/static/w01s1/grid%20loop%20attempt%201.png)
+![grid loop attempt 1](/w01s1/grid%20loop%20attempt%201.png)
 
 In my first attempt, I resized the canvas to fit the screen and set the total number of rows to 6, which means I'll have 10 columns and 6 rows.
 
@@ -238,13 +254,13 @@ Besides the resources that provided on Canvas, here's some other resources that 
 
 ---
 
-![homework 2.](/static/w01s1/homework%202..png)
+![homework 2.](/w01s1/homework%202..png)
 
 I chose the work ["pages"](https://www.newrafael.com/pages/).
 
 **1. What's happening under the hood?**
 
-![pages](/static/w01s1/pages.png)
+![pages](/w01s1/pages.png)
 
 This interactive website features a flipping page animation where users can click to trigger color transitions. The flipping effect is composed of various geometric shapes, including rectangles, lines, and arcs, which contribute to the dynamic movement and visual experience.
 
@@ -281,7 +297,7 @@ This interactive website features a flipping page animation where users can clic
 
 ## Session 2: 6 Mar
 
-![homework2](/static/w01s2/homework2.png)
+![homework2](/w01s2/homework2.png)
 
 **Conclusion of the discussion with my classmates**
 
@@ -298,7 +314,7 @@ This interactive website features a flipping page animation where users can clic
 
 ---
 
-![homework3](/static/w01s2/homework3.png)
+![homework3](/w01s2/homework3.png)
 
 I chose to explore the interactive concept (mouseClicked) by making the colours change when user clicks on it.
 

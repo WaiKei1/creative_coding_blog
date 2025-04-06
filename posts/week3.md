@@ -48,10 +48,14 @@ _Functions_ and _Classes_ both allow us to organize and reuse code, but they ser
 
 ---
 
-### Difference between Variables and Attributes:
+### Difference between Variables, Parameters, Arguments and Attributes:
 
-- Variables store data temporarily
-- Attributes always belong to an object and store its properties
+![table](/w03s1/table.png)
+
+- Variables store data temporarily (like nametag/ ingredients in the kitchen)
+- Parameters are like empty slots in a recipe where you specify ingredients (nicknames or label) (only in function)
+- Arguments is the actual items that I put into the parameters (label) like the real ingrediencts you give to the recipe
+- Attributes always belong to an object and store its properties (properties of a specific dish you’ve made. e.g., cake.layers)
 
 ---
 
@@ -72,7 +76,15 @@ Arrow functions are a shorthand way to define functions, making code more concis
 
 Example:
 
-    const add = (a, b) => a + b;
+- **Regular Function Expression:**
+
+        function add(a, b) {
+            return a + b;
+        }
+
+- **With arrow function expression:**
+
+        const add = (a, b) => a + b;
 
 ---
 
@@ -118,7 +130,7 @@ Boolean logic is a system of **true/false** rules used to make decisions. It det
 
 ### Session 1: 18 Mar
 
-![homework3a_1](/static/w03s1/homework3a_1.png)
+![homework3a_1](/w03s1/homework3a_1.png)
 
 This time, I chose [Why Was He Sad](https://www.whywashesad.com/). This is a playful and interactive artwork. In my perspective, Rafael Rozendaal achieves a cute aesthetic register in the following ways:
 
@@ -140,7 +152,7 @@ Rozendaal achieves a cute aesthetic register by combining simple visual elements
 
 ---
 
-![homework3a_2](/static/w03s1/homework3a_2.png)
+![homework3a_2](/w03s1/homework3a_2.png)
 
 <iframe id="A1: Attempt 2" src="https://editor.p5js.org/WaiKei1/full/ogBSf5AGr"></iframe>
 
@@ -168,7 +180,7 @@ Interaction is simple clicking cycles through her expressions, mimicking how her
 
 ---
 
-![homework3a_2](/static/w03s1/homework3a_3.png)
+![homework3a_2](/w03s1/homework3a_3.png)
 
 **Feedback from Rania:**
 
@@ -178,7 +190,7 @@ Interaction is simple clicking cycles through her expressions, mimicking how her
 
 ### Session 2: 20 Mar
 
-![homework3b_1](/static/w03s2/homework3b_1.png)
+![homework3b_1](/w03s2/homework3b_1.png)
 
 In my second attempt, I did not used the classes concept so I reiterate my code and here is the final version of my A1:
 
@@ -319,7 +331,7 @@ Here's how my assignment 1 uses these concept:
 
 ---
 
-![homework3b_2](/static/w03s2/homework3b_2.png)
+![homework3b_2](/w03s2/homework3b_2.png)
 
 <iframe id="A1 Final" src="https://editor.p5js.org/WaiKei1/full/_lnmvflzo"></iframe>
 

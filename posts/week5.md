@@ -29,3 +29,40 @@ An error, malfunction. Glitch is also one of the beauty.
 ### Chaotic Aesthetic Register
 
 A visual and conceptual style that embraces disorder, unpredictability and dissonance.
+
+# Group Task
+
+1.  ![gw1](/w05s1/gw1.png)
+
+**Explaination:**
+
+- declaring w2h (width to height) into 2 arguements (\_, i)
+
+- using the arrow function (a shorthand for writing function)
+
+- return [^2]  
+  [^2]: **return** is used to send values back from functions (serving a finished dish), without return is like recipes with no output (pointless)
+
+<script src="./scripts/p5.js"></script>
+
+<canvas id="p5_example"></canvas>
+
+<script>
+    const cnv = document.getElementById ("p5_example")
+    const w = cnv.parentNode.scrollWidth
+    const h = w * 9 / 16
+
+    function setup () {
+        createCanvas (w, h, P2D, cnv)
+    }
+
+    function draw () {
+        background (`red`)
+        console.log (frameCount)
+    }
+
+
+
+
+
+</script>
