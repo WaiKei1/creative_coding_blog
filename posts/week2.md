@@ -10,6 +10,28 @@ allow_math: true
 | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
 | [A1](https://waikei1-creative-co-63.deno.dev/A1)    |
 
+### INDEX
+
+- [Notes](https://waikei1-creative-co-63.deno.dev/week2#notes)
+
+  - [Aesthetic Register](https://waikei1-creative-co-63.deno.dev/week2#aesthetic-register)
+  - [Kindred Spirit](https://waikei1-creative-co-63.deno.dev/week2#kindred-spirit)
+  - [Function](https://waikei1-creative-co-63.deno.dev/week2#function)
+  - [Array](https://waikei1-creative-co-63.deno.dev/week2#array)
+  - [.map function](https://waikei1-creative-co-63.deno.dev/week2#arrayprototypemap--map-function)
+  - [Object.assign syntax](https://waikei1-creative-co-63.deno.dev/week2#objectassign-syntax)
+  - [unshift () method of Array](https://waikei1-creative-co-63.deno.dev/week2#objectassign-syntax)
+  - [lerpColor()](https://waikei1-creative-co-63.deno.dev/week2#lerpcolor)
+  - [splice ()](https://waikei1-creative-co-63.deno.dev/week2#arrayprototypesplice--splice)
+  - [Math.floor()](https://waikei1-creative-co-63.deno.dev/week2#mathfloor)
+
+- [Homework](https://waikei1-creative-co-63.deno.dev/week2#homework)
+
+  - [Session 1: 11 Mar](https://waikei1-creative-co-63.deno.dev/week2#session-1-11-mar)
+  - [Session 2: 13 Mar](https://waikei1-creative-co-63.deno.dev/week2#session-2-13-mar)
+
+---
+
 # Notes
 
 ### Aesthetic Register
@@ -174,6 +196,67 @@ Paramters
 2. Returns removed elements (even if empty).
 
 3. Handles negative indices: -1 = last element.
+
+**Examples:**
+
+1.  **Removing Elements**
+
+        const arr = [1, 2, 3, 4];
+        arr.splice(1, 2); // Removes 2 elements starting at index 1
+        // arr → [1, 4] (expected output), Returns [2, 3]
+
+2.  **Replacing Elements**
+
+        const arr = ['a', 'b', 'c'];
+        arr.splice(1, 1, 'x', 'y'); // Replaces 1 element at index 1 with 'x' and 'y'
+        // arr → ['a', 'x', 'y', 'c'] (expected output), Returns ['b']
+
+3.  **Adding Elements**
+
+        const arr = [10, 20];
+        arr.splice(1, 0, 15); // Inserts at index 1 (deletes 0 elements)
+        // arr → [10, 15, 20], Returns []
+
+4.  **Clear from Index**
+
+        const arr = [1, 2, 3, 4];
+        arr.splice(2); // Removes all elements from index 2 onward
+        // arr → [1, 2], Returns [3, 4]
+
+_\* if x.splice(-1, -1), then the first -1 refers to the last element of the array (array.length - 1), the second -1 treated as 0 since you can't delete a negative number of elements (NO ELEMENTS ARE REMOVED)_
+
+---
+
+### [Math.floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
+
+A function that returns the largest integer less than or equal to a given number. Essentially, it rounds down to the nearest whole number. In p5.js, floor() is a shorthand for Math.floor().
+
+**Syntax**
+
+    Math.floor(x)
+
+- x: The number to round down
+
+**Example:**
+
+    1. Math.floor(3.7);
+      //output: 3
+
+    2. Math.floor(0.1 + 0.2);
+      //output: 0 (due to floating-point math)
+
+floating-point math [^1]
+
+    3. Math.floor(-3.2);
+      //output: -4 (not -3)
+
+[^1]: floating-point math refer to how computers handle decimal numbers like (0.1, 3.14, etc.) using a binary representation. Due to this, some decimal numbers can't be stored precisely in computers, leading to tiny rounding errors.
+
+---
+
+### Comparison with Other Methods
+
+![math](/w02s2/math.png)
 
 ---
 
@@ -532,6 +615,45 @@ And of course we want the old shapes disappear.
   - Later, sweep through and remove all tagged items
 
 This is safer than removing immediately during iteration (which can cause bugs).
+
+---
+
+**15. Why floor(random() \* 360) Works**
+
+- How random() Works
+  In p5.js and JavaScript in general,random() generates a floating-point (decimal) number between 0 (inclusive) and 1 (exclusive).
+
+  - Minimum: 0.000... (can be 0 exactly)
+
+  - Maximum: 0.999... (never reaches 1)
+
+- If random() turns 0.999... (max), then 0.999 x 360 = 359.999
+
+- and the floor() means round down so 359 (the notes can be found at top)
+
+- we need integers so we need to use floor()
+
+- The reason that we use 360 specifically is because the hue value range is from 0 to 359 (360° color wheel), 360 will overlap with 0 (same colour), so 359 is the practical max
+
+---
+
+**16. Why return color(h, 100, 100)**
+
+- Hue (h): A value between 0-359
+
+- Saturation (100): Maximum vibrancy (0 = grayscale, 100 = full color)
+
+- Brightness/Lightness (100): Maximum brightness (0 = black, 100 = full brightness)
+
+It works as:
+
+- color(h, 100, 100)
+
+  - Creates a bright, fully saturated color at hue h.
+
+  - Example: If h = 0 → red, h = 120 → green, h = 240 → blue.
+
+* p5.js defaults to RGB, so switch to HSB is needed
 
 ---
 

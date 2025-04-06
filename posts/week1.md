@@ -10,6 +10,24 @@ allow_math: true
 | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
 | [A1](https://waikei1-creative-co-63.deno.dev/A1)    |
 
+### INDEX
+
+- [Notes](https://waikei1-creative-co-63.deno.dev/week1#notes)
+
+  - [Comments vs Console.log](https://waikei1-creative-co-63.deno.dev/week1#comments-vs-consolelog)
+  - [Understanding the for loop](https://waikei1-creative-co-63.deno.dev/week1#understanding-the-for-loop)
+  - [Understanding forEach Method](https://waikei1-creative-co-63.deno.dev/week1#understanding-foreach-method)
+  - [Understanding while loop](https://waikei1-creative-co-63.deno.dev/week1#understanding-while-loop)
+  - [Undestanding frameCount and frameRate](https://waikei1-creative-co-63.deno.dev/week1#undestanding-framecount-and-framerate)
+  - [What is const ?](https://waikei1-creative-co-63.deno.dev/week1#what-is-const-)
+
+- [Homework](https://waikei1-creative-co-63.deno.dev/week1#homework)
+
+  - [Session 1: 4 Mar](https://waikei1-creative-co-63.deno.dev/week1#session-1-4-mar)
+  - [Session 2: 6 Mar](https://waikei1-creative-co-63.deno.dev/week1#session-2-6-mar)
+
+---
+
 # Notes
 
 This is the first class that we had for creative coding, our lecturer introduced p5, a javascript web editor. Here's some notes of basic coding:
@@ -155,6 +173,8 @@ const = constant, a fixed variable that **cannot be change after it's declared**
 - The _for_ loop repeats code based on conditions
 - _const_ stores fixed values that don't change
 - _frameCount_ counts frames; _frameRate_ controls speed
+
+---
 
 # Homework
 

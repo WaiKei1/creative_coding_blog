@@ -10,6 +10,25 @@ allow_math: true
 | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
 | [A1](https://waikei1-creative-co-63.deno.dev/A1)    |
 
+### INDEX
+
+- [Notes](https://waikei1-creative-co-63.deno.dev/week3#notes)
+
+  - [Understanding Classes](https://waikei1-creative-co-63.deno.dev/week3#understanding-classes)
+  - [Function vs Classes](https://waikei1-creative-co-63.deno.dev/week3#function-vs-classes)
+  - [Difference between Variables, Parameters, Arguments and Attributes](https://waikei1-creative-co-63.deno.dev/week3#difference-between-variables-parameters-arguments-and-attributes)
+  - [Vectors and Movement](https://waikei1-creative-co-63.deno.dev/week3#vectors-and-movement)
+  - [Arrow Functions in Javascript](https://waikei1-creative-co-63.deno.dev/week3#arrow-functions-in-javascript)
+  - [Differences between (=,==,===)](https://waikei1-creative-co-63.deno.dev/week3#differences-between-)
+  - [Understanding Boolean Logic](https://waikei1-creative-co-63.deno.dev/week3#understanding-boolean-logic)
+
+- [Homework](https://waikei1-creative-co-63.deno.dev/week3#homework)
+
+  - [Session 1: 18 Mar](https://waikei1-creative-co-63.deno.dev/week3#session-1-18-mar)
+  - [Session 2: 20 Mar](https://waikei1-creative-co-63.deno.dev/week3#session-2-20-mar)
+
+---
+
 # Notes
 
 ### Understanding Classes
@@ -107,6 +126,8 @@ compare values only, and ignore type. only use it if you understand the coercion
 **3. Triple equals (===): strict comparison (ALWAYS PREFER)**
 
 Always use it unless have a specific reason for coercion
+
+---
 
 ### Understanding Boolean Logic
 
