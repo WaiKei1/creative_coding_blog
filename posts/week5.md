@@ -1,7 +1,7 @@
 ---
 title: Week 5
 published_at: 2025-04-1
-snippet:
+snippet: Introducing RiTa.js
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -90,6 +90,41 @@ The post-digital refers to an artistic and cultural stance that no longer sees d
 
 - Critiques the myths of digital progress while still using digital tools.
 
+* Post-Digital artist is an artist who works in a cultural and creative landscape where digital technologies are no longer new, revolutionary, or separate from "real life"—instead, they are mundane, flawed, and deeply entangled with physical existence.
+
+(they treat digital tech as normal not special)
+
+- Post-digital art makes work about digital culture, without being impressed by it.
+
+---
+
+### What are APIs and Libraries in JavaScript?
+
+- Library = a box of ready-to-use tools
+
+  A library is a collection of pre-written code (functions, objects, etc.) that you can plug into your own code to make life easier.
+
+- API = a set of rules/tools you can use to interact with a system
+
+An API (Application Programming Interface) lets you talk to a system or browser in a controlled way.
+
+- It’s not a library, but it gives you access to tools like:
+
+---
+
+### RiTa.js Library
+
+### [Get To Know RiTa.js Library](https://youtu.be/lIPEvh8HbGQ)
+
+**What is RiTa.js?**
+RiTa.js is a JavaScript library for generative poetry, text manipulation, and computational creativity. It’s designed for artists, writers, and coders to create algorithm-driven text art, chatbots, or glitch poetry.
+
+TL;DR: This is a "poetry engine" for post-digital writing, an open source project that you can find on GitHub.
+
+**Ri String**
+
+**Ri Lexicon**
+
 ---
 
 # Group Task
@@ -104,6 +139,50 @@ The post-digital refers to an artistic and cultural stance that no longer sees d
 
 - return [^2]  
   [^2]: **return** is used to send values back from functions (serving a finished dish), without return is like recipes with no output (pointless)
+
+---
+
+# Homework
+
+### Session 1: 1 Apr
+
+---
+
+### Session 2: 3 Apr
+
+![hw5a_1](/w05s2/hw5a_1.png)
+
+**Post-Digital Artist: Cory Arcangel**
+
+Work: [Super Mario Clouds (2002)](https://whitney.org/collection/works/20588)
+
+In this work, Cory Arcangel hacked the game Super Mario Bros., erasing all gameplay elements and leaving only the endlessly scrolling blue sky and clouds.
+
+Cramer argues that post-digital art abandons the “wow” factor. Arcangel’s manipulation of the game’s code demonstrates this approach—treating the digital medium not as a spectacle, but as raw material to be deconstructed and reimagined.
+
+The piece exists as both a downloadable ROM and a physical cartridge in the Whitney Museum further dissolving the boundaries between virtual and physical space.
+
+Other than that, the work is in an incomplete state (missing Mario, enemies, etc) also reflects the digital dysfunction.
+
+---
+
+![hw5a_2](/w05s2/hw5a_2.png)
+
+The artist is using programming and video technology to alter the game’s code by removing the elements in the game.
+
+If the artwork was recreated using JavaScript (recreated the endlessly scrolling blue sky and clouds), technologies, APIs, and libraries that could be used:
+
+1. Canvas API / p5.js
+
+These would be more than sufficient to create the basic visual effects. (draw and animate the scrolling clouds and sky)
+
+2. Web Audio API
+
+control over sound elements. (AudioContext?)
+
+---
+
+![hw5a_3](/w05s2/hw5a_3.png)
 
 ---
 
@@ -124,10 +203,6 @@ The post-digital refers to an artistic and cultural stance that no longer sees d
         background (`red`)
         console.log (frameCount)
     }
-
-
-
-
 
 </script>
 
