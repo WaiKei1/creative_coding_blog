@@ -118,7 +118,7 @@ The post-digital refers to an artistic and cultural stance that no longer sees d
 
 **What is RiTa.js?**
 
-    RiTa.js is a JavaScript library for generative poetry, text manipulation, and computational creativity. It’s designed for artists, writers, and coders to create algorithm-driven text art, chatbots, or glitch poetry.
+RiTa.js is a JavaScript library for generative poetry, text manipulation, and computational creativity. It’s designed for artists, writers, and coders to create algorithm-driven text art, chatbots, or glitch poetry.
 
 TL;DR: This is a "poetry engine" for post-digital writing, an open source project that you can find on GitHub.
 
@@ -148,6 +148,29 @@ Giant list of words, a dictionary, NLP compromise
 # Homework
 
 ### Session 1: 1 Apr
+
+![hw4b_1](/w05s1/hw4b_1.png)
+
+<canvas id="glitch_self_portrait"></canvas>
+
+<script type="module">
+
+   const cnv = document.getElementById (`glitch_self_portrait`)
+   cnv.width = cnv.parentNode.scrollWidth
+   cnv.height = cnv.width * 9 / 16
+   cnv.style.backgroundColor = `deeppink`
+
+   const ctx = cnv.getContext (`2d`)
+
+   
+
+---
+
+![hw4b_2](/w05s1/hw4b_2.png)
+
+---
+
+![hw4b_3](/w05s1/hw4b_3.png)
 
 ---
 
