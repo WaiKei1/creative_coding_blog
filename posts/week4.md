@@ -15,6 +15,8 @@ allow_math: true
 - [Notes](https://waikei1-creative-co-63.deno.dev/week4#notes)
 
   - [Canvas API](https://waikei1-creative-co-63.deno.dev/week4#canvas-api)
+  - [High effective complexity](https://waikei1-creative-co-63.deno.dev/week4#high-effective-complexity)
+  - [Generative Art](https://waikei1-creative-co-63.deno.dev/week4#generative-art)
 
 - [Homework](https://waikei1-creative-co-63.deno.dev/week4#homework)
 
@@ -33,15 +35,59 @@ The basic setup for Canvas API is a HTML file and a JavaScript file (script.js).
 
 ### High and Low Compressibility
 
-Compressibility refers to how much a given set of data can reduced in size (compressed) without losing information
+Compressibility refers to how much a given set of data can reduced in size (compressed) without losing information.
 
-**High Compressibility**
+**High Compressibility (simple, repeatable)**
 
-**Low Compressibility**
+Data that can be significantly reduced due to clear patterns and repetition.
+
+- **Characteristics**
+
+  Orderly, patterned, organized → Easier to compress (e.g., copying/repeating code).
+
+- **Visual Metaphor**
+
+  A tidy LEGO set, where all bricks are sorted by color and size. You don’t need to describe each piece, just say “10 red blocks, 5 blue ones.”
 
 ---
 
-### High effective complexity
+**Low Compressibility (messy, unpredictable)**
+
+Data that resists size reduction because it lacks predictable patterns (high randomness or uniqueness).
+
+- **Characteristics**
+
+  Messy, unpredictable, and hard to reduce
+
+- **Visual Metaphor**
+
+  A junk drawer filled with random objects. Since nothing’s organized, you’d need to list every item one by one - no shortcuts.
+
+---
+
+### High effective complexity (best of both worlds)
+
+A meaningful blend of order and randomness — complex but not completely chaotic.
+
+- **Characteristics**
+
+  Enough structure to recognize patterns, but enough randomness to keep it interesting.
+
+- **Visual Metaphor**
+
+  A LEGO castle with random toys glued to it. The base (castle) is structured, while the toys add surprise and uniqueness.
+
+---
+
+### Generative Art
+
+Generative art is art created using rules, algorithms, or systems where the artist designs a process, and the artwork emerges from it (often with randomness or variation)
+
+In Philip Galanter's 2003 paper "What is Generative Art? Complexity Theory as a Context for Art Theory", Galanter argues generative art is not just about tools (code, algorithms) but about systemic creativity
+
+Generative Art = Art that grows itself. It is like planting a seed and letting a garden grow unpredictably.
+
+It is a full work, but split into two layers. Artist's labour is to design the system and the system executes while adding randomness sometimes. Think of it like chess: The rules are fixed, but every game is unique. The artist designs the board; the system plays the game.
 
 ---
 
@@ -51,9 +97,97 @@ Compressibility refers to how much a given set of data can reduced in size (comp
 
 ![Hw4a_1](/w04s1/homework4a_1.png)
 
+For these three compositions, I'm trying to viusalise the metaphor that I stated for each of them.
+
+**A. High Compressibility: Toy Store Shelf**
+
+<iframe id="high compressibility" src="https://editor.p5js.org/WaiKei1/full/gLx-bWb2V"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`high compressibility`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
+
+All identical teddy bears neatly lined up in a grid.
+
+Everything is organized and predictable. Since the same toy repeats in a structured way, it’s easy to describe and compress — like saying "10 teddy bears in 5 rows" instead of listing each one.
+
+**B. Low Compressibility: Junk Drawer of Toys**
+
+For this low compressibility composition, I try to use the Canvas API to code.
+
+<canvas id="canvas" width="400" height="400"></canvas>
+
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    const toys = ["🧸", "🚗", "🪀", "🪁", "🧃", "🎲", "🦕", "🪆", "🎯", "🪓"];
+
+    ctx.font = "24px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    for (let i = 0; i < 50; i++) {
+      let toy = toys[Math.floor(Math.random() * toys.length)];
+      let x = Math.random() * canvas.width;
+      let y = Math.random() * canvas.height;
+      ctx.fillText(toy, x, y);
+    }
+  </script>
+
+    <canvas id="canvas" width="400" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        const toys = ["🧸", "🚗", "🪀", "🪁", "🧃", "🎲", "🦕", "🪆", "🎯", "🪓"];
+
+        ctx.font = "24px Arial";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+
+        for (let i = 0; i < 50; i++) {
+        let toy = toys[Math.floor(Math.random() * toys.length)];
+        let x = Math.random() * canvas.width;
+        let y = Math.random() * canvas.height;
+        ctx.fillText(toy, x, y);
+        }
+    </script>
+
+All kinds of random toys tossed everywhere.
+
+No pattern, no order, just chaos. Every item is unique and placed unpredictably, like a messy junk drawer. You can’t summarize it without listing each toy and its location.
+
+**C. High Effective Complexity – “Organized Toy Shelf with Surprises**
+
+<iframe id="High Effective Complexity" src="https://editor.p5js.org/WaiKei1/full/xDX4XF0Vv"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`High Effective Complexity`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
+
+A toy shelf with a structured layout, but each spot holds a different toy.
+
+There’s a clear underlying structure (like shelves or grid), but the contents are diverse. This balance between order and variation makes the composition interesting, neither too simple nor too chaotic.
+
 ---
 
 ![Hw4a_2](/w04s1/homework4a_2.png)
+
+Galanter’s idea is particularly useful in generative art because it allows artists to explore how structure can emerge alongside randomness. It acknowledges that structure isn't always fixed as it can be perceived differently by different viewers.
+
+In my first and second compositions (high and low compressibility), the contrast is clear. The high compressibility piece has a very obvious and rigid structure — neat rows of identical teddy bears but it lacks the surprise or variation that randomness brings. On the other hand, the low compressibility piece is entirely random, with no visible order. The structure is nearly invisible, making it harder to interpret or predict.
+
+But in my third composition, it was a combinition of the first and the second feature. This is where Galanter’s point about subjective structure really shows. The layout follows a clear grid (structure), but each position contains a different toy (randomness). It’s visually organized, yet still engaging because of the variation.
+
+In this sense, the grid logic in the code provides the structure, while randomized toy selection introduces unpredictability. It creates a balance between order and chaos.
 
 ---
 

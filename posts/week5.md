@@ -106,7 +106,7 @@ The post-digital refers to an artistic and cultural stance that no longer sees d
 
 - API = a set of rules/tools you can use to interact with a system
 
-An API (Application Programming Interface) lets you talk to a system or browser in a controlled way.
+  An API (Application Programming Interface) lets you talk to a system or browser in a controlled way.
 
 - It’s not a library, but it gives you access to tools like:
 
@@ -114,16 +114,19 @@ An API (Application Programming Interface) lets you talk to a system or browser 
 
 ### RiTa.js Library
 
-### [Get To Know RiTa.js Library](https://youtu.be/lIPEvh8HbGQ)
+- [Get To Know RiTa.js Library](https://youtu.be/lIPEvh8HbGQ)
 
 **What is RiTa.js?**
-RiTa.js is a JavaScript library for generative poetry, text manipulation, and computational creativity. It’s designed for artists, writers, and coders to create algorithm-driven text art, chatbots, or glitch poetry.
+
+    RiTa.js is a JavaScript library for generative poetry, text manipulation, and computational creativity. It’s designed for artists, writers, and coders to create algorithm-driven text art, chatbots, or glitch poetry.
 
 TL;DR: This is a "poetry engine" for post-digital writing, an open source project that you can find on GitHub.
 
 **Ri String**
 
 **Ri Lexicon**
+
+Giant list of words, a dictionary, NLP compromise
 
 ---
 
@@ -172,13 +175,13 @@ The artist is using programming and video technology to alter the game’s code 
 
 If the artwork was recreated using JavaScript (recreated the endlessly scrolling blue sky and clouds), technologies, APIs, and libraries that could be used:
 
-1. Canvas API / p5.js
+1. **Canvas API / p5.js**
 
-These would be more than sufficient to create the basic visual effects. (draw and animate the scrolling clouds and sky)
+   These would be more than sufficient to create the basic visual effects. (draw and animate the scrolling clouds and sky)
 
-2. Web Audio API
+2. **Web Audio API**
 
-control over sound elements. (AudioContext?)
+   control over sound elements. (AudioContext?)
 
 ---
 
