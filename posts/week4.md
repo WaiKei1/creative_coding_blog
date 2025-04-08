@@ -15,6 +15,7 @@ allow_math: true
 - [Notes](https://waikei1-creative-co-63.deno.dev/week4#notes)
 
   - [Canvas API](https://waikei1-creative-co-63.deno.dev/week4#canvas-api)
+  - [High and Low Compressibility](https://waikei1-creative-co-63.deno.dev/week4#high-and-low-compressibility)
   - [High effective complexity](https://waikei1-creative-co-63.deno.dev/week4#high-effective-complexity)
   - [Generative Art](https://waikei1-creative-co-63.deno.dev/week4#generative-art)
 
