@@ -66,7 +66,7 @@ This is the first class that we had for creative coding, our lecturer introduced
 
 A _for_ loop in Javascript consists three parts (initialization, condition, and update). They usually appear together in a single line to control the loop's behaviour.
 
-![for loop syntax](/w01s1/forloop.png)
+![for loop syntax](/w01s1/for%20loop%20syntax.png)
 
 for (initialization; condition; update)
 
