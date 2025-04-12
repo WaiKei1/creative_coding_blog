@@ -20,6 +20,14 @@ allow_math: true
 
 ### requestAnimationFrame()
 
+signal you
+
+envelopes
+
+---
+
+### three.js
+
 ---
 
 # Homework
@@ -29,14 +37,15 @@ allow_math: true
 <div id="three_container"></div>
 
 <script type="module">
-   import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.module.js'
+   import * as THREE from "/250408/three.js/build/three.module.js"
 
 const container = document.getElementById (`three.js_container`)
 const width = container.parentNode.scrollWidth
 const height = width * 9 / 16
 
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/controls/OrbitControls.js'
-import { TeapotGeometry } from 'https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/geometries/TeapotGeometry.js'
+// import { GUI } from '/250408/three.js/examples/jsm/libs/lil-gui.module.min.js';
+import { OrbitControls } from '/250408/three.js/examples/jsm/controls/OrbitControls.js'
+import { TeapotGeometry } from '/250408/three.js/examples/jsm/geometries/TeapotGeometry.js'
 
 let camera, scene, renderer
 let cameraControls
@@ -287,6 +296,8 @@ requestAnimationFrame (draw_teapot)
 ---
 
 ### Session 2: 10 Apr
+
+Next session will be doing some activities os read the essay
 
 ---
 

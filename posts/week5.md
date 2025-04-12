@@ -122,12 +122,6 @@ RiTa.js is a JavaScript library for generative poetry, text manipulation, and co
 
 TL;DR: This is a "poetry engine" for post-digital writing, an open source project that you can find on [GitHub](https://github.com/dhowe/ritajs).
 
-**Ri String**
-
-**Ri Lexicon**
-
-Giant list of words, a dictionary, NLP compromise
-
 ---
 
 # Group Task
@@ -253,9 +247,13 @@ Giant list of words, a dictionary, NLP compromise
     //path to the self-portrait image
     img.src = `w05s1/me.jpg`;
 
-    //
+    // generate a random number from 0 up to but not including max
+    // using Math.floor to round down to whole numbers
+    // this is a function that generates random integers between 0 and max -1
+    // math.random() genreates a random decimal between 0 and exclusive 1
     const rand_int = max => Math.floor (Math.random () * max)
 
+    //
     const glitchify = (data, chunk_max, repeats) => {
         const chunk_size = rand_int (chunk_max / 4) * 4
         const i = rand_int (data.length - 24 - chunk_size) + 24
@@ -340,6 +338,33 @@ If the artwork was recreated using JavaScript (recreated the endlessly scrolling
 ---
 
 ![hw5a_3](/w05s2/hw5a_3.png)
+
+<canvas id="poem"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rita/2.8.31/rita-full.min.js"></script>
+
+<script>
+  const cnv = document.getElementById("poem");
+  cnv.width = cnv.parentNode.scrollWidth;
+  cnv.height = cnv.width * 9 / 16;
+  const ctx = cnv.getContext("2d");
+
+   const grammar = {
+      "start": ["#line1#\n#line2#\n#line3#"], // Newlines for line breaks
+      "line1": ["CODE ERASED", "NO MORE GAME", "PIXEL GHOSTS"],
+      "line2": ["ONLY CLOUDS LEFT", "INFINITE SKY", "SCROLLING VOID"],
+      "line3": ["PRESS RESET", "|| GLITCH ||", "404 MARIO"]
+    };
+
+    const poem = RiTa.grammar(grammar);
+
+    ctx.fillStyle = "black"; 
+    ctx.font = "20px Arial"; 
+    ctx.textAlign = "center"; 
+    ctx.textBaseline = "middle"; 
+    ctx.fillText(poem, cnv.width / 2, cnv.height / 2); 
+    
+</script>
 
 ---
 
