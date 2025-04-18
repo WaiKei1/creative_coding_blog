@@ -6,6 +6,46 @@ disable_html_sanitization: true
 allow_math: true
 ---
 
+<div id="poem"></div>
+
+<script type="module">
+   import { RiTa } from "https://esm.sh/rita"
+   console.log (RiTa)
+
+   const div = document.getElementById (`poem`)
+
+   const grammar = new RiGrammer();
+
+   grammar.addRule("<start>", "The <medium> <action>");
+   grammar.addRule("<medium>", "cartridge | ROM | save file");
+   grammar.addRule("<action>", "forgets | corrupts | erases");
+   
+
+   const result = grammar.expand();
+  console.log(result);
+
+   const poem = lines.join ("\n")
+
+   const words = {
+    medium: ["cartridge", "ROM", "save file"],
+    action: ["forgets", "corrupts", "erases"],
+    objects: ["clouds", "pixels", "castles"]
+  };
+
+    const lines = [
+    `The ${RiTa.randomItem(words.medium)} ${RiTa.randomItem(words.action)},`,
+    `${RiTa.randomItem(["Static.", "Error:", "Skip..."])} ${RiTa.randomItem(words.objects)}`,
+    RiTa.randomItem([
+      "rewriting the sky's script",
+      "left on infinite loop",
+      "deleted but still there"
+    ])
+  ];
+
+ div.textContent = lines.join("\n");
+
+</script>
+
 | [W1](https://waikei1-creative-co-63.deno.dev/week1) | [W2](https://waikei1-creative-co-63.deno.dev/week2) | [W3](https://waikei1-creative-co-63.deno.dev/week3) | [W4](https://waikei1-creative-co-63.deno.dev/week4) | [W5](https://waikei1-creative-co-63.deno.dev/week5) | [W7](https://waikei1-creative-co-63.deno.dev/week7) | [W8](https://waikei1-creative-co-63.deno.dev/week8) | [W9](https://waikei1-creative-co-63.deno.dev/week9) | [W10](https://waikei1-creative-co-63.deno.dev/week10) | [W11](https://waikei1-creative-co-63.deno.dev/week11) | [W12](https://waikei1-creative-co-63.deno.dev/week12) |
 | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | [A1](https://waikei1-creative-co-63.deno.dev/A1)    | [A2](https://waikei1-creative-co-63.deno.dev/A2)    | [A3](https://waikei1-creative-co-63.deno.dev/A3)    |

@@ -339,32 +339,139 @@ If the artwork was recreated using JavaScript (recreated the endlessly scrolling
 
 ![hw5a_3](/w05s2/hw5a_3.png)
 
-<canvas id="poem"></canvas>
+Before writing my poem in English, I decided to write it in Chinese first, as it was easier for me to express myself fluently. I then translated the poem into English. The reason that I write poem first is because I think it will be more easier for me to code the poem if I have the content.
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rita/2.8.31/rita-full.min.js"></script>
+    《云的故障牧歌》
 
-<script>
-  const cnv = document.getElementById("poem");
-  cnv.width = cnv.parentNode.scrollWidth;
-  cnv.height = cnv.width * 9 / 16;
-  const ctx = cnv.getContext("2d");
+    卡带在遗忘，
+    城堡沉入无尽碧。
 
-   const grammar = {
-      "start": ["#line1#\n#line2#\n#line3#"], // Newlines for line breaks
-      "line1": ["CODE ERASED", "NO MORE GAME", "PIXEL GHOSTS"],
-      "line2": ["ONLY CLOUDS LEFT", "INFINITE SKY", "SCROLLING VOID"],
-      "line3": ["PRESS RESET", "|| GLITCH ||", "404 MARIO"]
-    };
+    沙沙声。
+    像一段被跳过的
+    通关音乐。
 
-    const poem = RiTa.grammar(grammar);
+    而云始终在，
+    用慢动作的笔迹,
+    修改天空的剧本。
 
-    ctx.fillStyle = "black"; 
-    ctx.font = "20px Arial"; 
-    ctx.textAlign = "center"; 
-    ctx.textBaseline = "middle"; 
-    ctx.fillText(poem, cnv.width / 2, cnv.height / 2); 
-    
+Here's the English version:
+
+    Clouds Erasure
+
+      The cartridge forgets,
+      castles dissolving
+      into endless azure.
+
+      Static.
+      Like a victory theme
+      left on skip.
+
+      Yet the clouds remain,
+      rewriting the sky's script
+      in slow-motion calligraphy.
+
+---
+
+<style>
+  #generateBtn {
+    background-color: #ffffff;
+    color:rgb(129, 192, 255);
+    border: 2px solid rgb(129, 192, 255);
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  #generateBtn:hover {
+    background-color:rgb(159, 207, 255);
+    color: white;
+  }
+</style>
+
+<button id="generateBtn">GENERATE</button>
+
+<canvas id="poemCanvas" width="800" height="400"></canvas>
+
+<script type="module">
+
+  import { RiTa } from "https://esm.sh/rita";
+
+  const canvas = document.getElementById("poemCanvas");
+  const ctx = canvas.getContext("2d");
+  const btn = document.getElementById("generateBtn");
+
+  const words = {
+    action: ["forgets", "corrupts", "erases"],
+    objects: ["clouds", "pixels", "castles"],
+    themes: ["victory theme", "game over tone", "glitchy lullaby"],
+    endings: [
+      "rewriting the sky's script",
+      "left on infinite loop",
+      "in slow-motion calligraphy",
+      "echoing through memory",
+    ]
+  };
+
+  function drawPoem() {
+    // Generate poem lines with random words
+    const title = "Clouds Erasure";
+    const line1 = `The cartridge ${RiTa.random(words.action)},`;
+    const line2 = `${RiTa.random(words.objects)} dissolving`;
+    const line3 = `into endless azure.`;
+    const line4 = ``;
+    const line5 = `Static.`;
+    const line6 = `Like a ${RiTa.random(words.themes)}`;
+    const line7 = `left on skip.`;
+    const line8 = ``;
+    const line9 = `Yet the clouds remain,`;
+    const line10 = `${RiTa.random(words.endings)}.`;
+
+    const poemLines = [
+      title,
+      "",
+      line1,
+      line2,
+      line3,
+      "",
+      line5,
+      line6,
+      line7,
+      "",
+      line9,
+      line10
+    ];
+
+    // Draw background
+    ctx.fillStyle = "#87CEEB"; // sky blue
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Title styling
+    ctx.fillStyle = "#fff";
+    ctx.font = "bold 24px Georgia";
+    ctx.fillText(poemLines[0], 30, 30);
+
+    // Poem body styling
+    ctx.font = "20px Georgia";
+    let y = 70;
+    for (let i = 1; i < poemLines.length; i++) {
+      ctx.fillText(poemLines[i], 30, y);
+      y += 30;
+    }
+  }
+
+  // Initial poem draw
+  drawPoem();
+
+  // Regenerate poem on button click
+  btn.addEventListener("click", drawPoem);
 </script>
+
+This is the poem that I did via RiTa source. I was struggling at first because I didn't know how to utilize the RiTa methods in the Canvas API. But after I read through the resources than I found that set a rules is the very first things before generate the text or article and then through the rules you need to set a structure that could let the computer read and understand what is expected.
+
+Beside that I also use the technique from the resource that I found that use clicking interaction to create the flipped page effect but this time I make it into a generate button that could generate different sentences and combine a varieties of poems combinations through clicking that button.
 
 ---
 
