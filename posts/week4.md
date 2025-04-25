@@ -139,24 +139,26 @@ For this low compressibility composition, I try to use the Canvas API to code.
     }
   </script>
 
-    <canvas id="canvas" width="400" height="400"></canvas>
+```javascript
+<canvas id="canvas" width="400" height="400"></canvas>
 
-    <script>
-        const canvas = document.getElementById("canvas");
-        const ctx = canvas.getContext("2d");
-        const toys = ["🧸", "🚗", "🪀", "🪁", "🧃", "🎲", "🦕", "🪆", "🎯", "🪓"];
+<script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    const toys = ["🧸", "🚗", "🪀", "🪁", "🧃", "🎲", "🦕", "🪆", "🎯", "🪓"];
 
-        ctx.font = "24px Arial";
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
+    ctx.font = "24px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
 
-        for (let i = 0; i < 50; i++) {
-        let toy = toys[Math.floor(Math.random() * toys.length)];
-        let x = Math.random() * canvas.width;
-        let y = Math.random() * canvas.height;
-        ctx.fillText(toy, x, y);
-        }
-    </script>
+    for (let i = 0; i < 50; i++) {
+    let toy = toys[Math.floor(Math.random() * toys.length)];
+    let x = Math.random() * canvas.width;
+    let y = Math.random() * canvas.height;
+    ctx.fillText(toy, x, y);
+    }
+</script>
+```
 
 All kinds of random toys tossed everywhere.
 

@@ -20,13 +20,18 @@ allow_math: true
   - [Beauty of the Glitch](https://waikei1-creative-co-63.deno.dev/week5#beauty-of-the-glitch)
   - [Chaotic Aesthetic Register](https://waikei1-creative-co-63.deno.dev/week5#chaotic-aesthetic-register)
   - [Post-Digital](https://waikei1-creative-co-63.deno.dev/week5#post-digital)
+  - [APIs and Libraries in JavaScript](https://waikei1-creative-co-63.deno.dev/week5#what-are-apis-and-libraries-in-javascript)
+  - [DOM (Document Object Model)
+    ](https://waikei1-creative-co-63.deno.dev/week5#dom-document-object-model)
+  - [RiTa.js Library](https://waikei1-creative-co-63.deno.dev/week5#ritajs-library)
+  - [Base64](https://waikei1-creative-co-63.deno.dev/week5#base64)
 
 - [Group Task](https://waikei1-creative-co-63.deno.dev/week5#group-task)
 
-- [Homework](https://waikei1-creative-co-63.deno.dev/week4#homework)
+- [Homework](https://waikei1-creative-co-63.deno.dev/week5#homework)
 
-  - [Session 1: 25 Mar](https://waikei1-creative-co-63.deno.dev/week3#session-1-25-mar)
-  - [Session 2: 27 Mar](https://waikei1-creative-co-63.deno.dev/week3#session-2-27-mar)
+  - [Session 1: 1 Apr](https://waikei1-creative-co-63.deno.dev/week3#session-1-1-apr)
+  - [Session 2: 3 Apr](https://waikei1-creative-co-63.deno.dev/week3#session-2-3-apr)
 
 ---
 
@@ -112,6 +117,24 @@ The post-digital refers to an artistic and cultural stance that no longer sees d
 
 ---
 
+### DOM (Document Object Model)
+
+This is a programming interface for web documents. It represents the structure of a web page (HTML or XML) as a tree-like model where each node is an object representing part of the document (e.g., elements, attributes, text). This allows programs (like JavaScript) to dynamically access, modify, and manipulate the content, structure, and style of a webpage.
+
+- **Tree Structure**
+
+  The DOM represents a document as a hierarchy of nodes (parent, child, sibling relationships).
+
+- **DOM Manipulation with JavaScript**
+
+  Using DOM manipulation with JavaScript, changes appear instantly without requiring the user to refresh the page. Without this manipulation, the user need to refresh the webpage to reflect the changes.
+
+  The DOM is always created by the browser, even if you don’t use JavaScript. JavaScript just gives you tools to modify it (`document.getElementById()`, `element.appendChild()`, etc.)
+
+  When javaScript is disabled, the DOM still exists (since the browser parses HTML). But no dynamic updates can happen.
+
+---
+
 ### RiTa.js Library
 
 - [Get To Know RiTa.js Library](https://youtu.be/lIPEvh8HbGQ)
@@ -121,6 +144,59 @@ The post-digital refers to an artistic and cultural stance that no longer sees d
 RiTa.js is a JavaScript library for generative poetry, text manipulation, and computational creativity. It’s designed for artists, writers, and coders to create algorithm-driven text art, chatbots, or glitch poetry.
 
 TL;DR: This is a "poetry engine" for post-digital writing, an open source project that you can find on [GitHub](https://github.com/dhowe/ritajs).
+
+---
+
+### Base64
+
+Base64 is a method of encoding binary data (like images, files, or raw bytes) into a text format using only 64 ASCII characters. This makes it safe for transmission over text-based systems (e.g., emails, HTML, URLs).
+
+Every image has unique binary data (originally raw binary data).
+
+The reason that we need to encode binary as text (Base64) is because binary data is unsafe for text-based systems as it may contain invisible control characters (e.g., NULL, line endings) that break protocols like HTTP, JSON, or email and some systems (like databases) only accept **ASCII** [^2] text.
+
+[^2]: **ASCII** is a subset (a standard encoding for text in computers)
+
+Base64 solves this by converting binary into a text string using only these 64 safe characters. This format is safe because it did not have risky characters like <>, &, or spaces that could confuse parsers. **Base64 is the "translator" that lets binary data travel safely in text-only worlds.**
+
+**ASCII**
+
+Base64 uses a subset of ASCII characters (a standard encoding for text in computers). Here’s how they connect:
+
+ASCII assigns a number (0–127) to each character (e.g., A = 65, a = 97).
+
+Base64 only uses these 64 safe ASCII characters:
+
+A-Z (26)
+
+a-z (26)
+
+0-9 (10)
+
+"+" and / (2)
+
+= (padding, not part of the 64).
+
+**How it works**
+
+1. Takes the binary data
+
+2. Splits into 6-bit chunks
+
+3. Converts to ASCII
+
+4. Padding with =
+
+(this step is to ensure that the final encoded data has a length that's a multiple of 4 characters. This is done by adding one or two = signs at the end of the Base64 string if needed.)
+
+**Why Padding is Necessary**
+Base64 works by converting 3 bytes (24 bits) of binary data → 4 characters (each representing 6 bits).
+
+If the input binary data isn’t divisible by 3, padding (=) fills the gap to make it work. Think of = as a "placeholder" to keep the structure intact, like adding silence to complete a musical measure.
+
+**Why "64"**
+
+There are 64 possible characters in the Base64 alphabet (enough to represent 6 bits per character). Math: 2^6 = 64 (each character encodes 6 bits of binary data).
 
 ---
 
@@ -134,8 +210,12 @@ TL;DR: This is a "poetry engine" for post-digital writing, an open source projec
 
 - using the arrow function (a shorthand for writing function)
 
-- return [^2]  
-  [^2]: **return** is used to send values back from functions (serving a finished dish), without return is like recipes with no output (pointless)
+- \_ : this argument is a placeholder for an unused parameter
+
+- i : the index of the current element
+
+- return [^3] `i * cnv.height / cnv.width`
+  [^3]: **return** is used to send values back from functions (serving a finished dish), without return is like recipes with no output (pointless)
 
 ---
 
@@ -208,98 +288,210 @@ TL;DR: This is a "poetry engine" for post-digital writing, an open source projec
       requestAnimationFrame (draw_frame)
    }
 
-    </script>
+</script>
 
-    <canvas id="glitch_self_portrait"></canvas>
+```html
+<canvas id="glitch_self_portrait"></canvas>
+```
 
-    <script type="module">
+```javascript
+<script type="module">
 
-    const cnv = document.getElementById (`glitch_self_portrait`)
-    cnv.width = cnv.parentNode.scrollWidth
-    cnv.height = cnv.width * 9 / 16
-    cnv.style.backgroundColor = `deeppink`
+  const cnv = document.getElementById (`glitch_self_portrait`)
+  cnv.width = cnv.parentNode.scrollWidth
+  cnv.height = cnv.width * 9 / 16
+  cnv.style.backgroundColor = `deeppink`
 
-    const ctx = cnv.getContext (`2d`)
+  const ctx = cnv.getContext (`2d`)
 
-    let img_data
-    //declaring a variable to store original image data
+  let img_data
+  //declaring a variable to store original image data
 
-    const draw = i => ctx.drawImage (i, 0, 0, cnv.width, cnv.height)
-    //function to draw the image on canvas
+  const draw = i => ctx.drawImage (i, 0, 0, cnv.width, cnv.height)
+  //function to draw the image on canvas
 
-    const img = new Image ()
-    //load the image
+  const img = new Image ()
+  //load the image
 
-    img.onload = () => {
-        //adjust canvas height to match image ratio
-        cnv.height = cnv.width * (img.height / img.width)
+  img.onload = () => {
+    //adjust canvas height to match image ratio
+    cnv.height = cnv.width * (img.height / img.width)
 
-        // draw the image
-        draw (img)
+    // draw the image
+    draw (img)
 
-        //save as JPEG data url
-        img_data = cnv.toDataURL ("image/jpeg")
+    //save as JPEG data url
+    img_data = cnv.toDataURL ("image/jpeg")
 
-        //add the glitch effect
-        add_glitch ()
+    //add the glitch effect
+    add_glitch ()
+   }
+
+  //path to the self-portrait image
+  img.src = `w05s1/me.jpg`;
+
+  // generate a random number from 0 up to but not including max
+  // using Math.floor to round down to whole numbers
+  // this is a function that generates random integers between 0 and max -1
+  // math.random() genreates a random decimal between 0 and exclusive 1
+  const rand_int = max => Math.floor (Math.random () * max)
+
+  // set a glitchify function in order to edit the glitch effect
+  // data to store and process the image data
+  // chunk max is the maximum size of the chunk to remove from the data
+  // repeats is hoe many times to repeat the chunk-removal process
+  // (more repeats = more corruption)
+  const glitchify = (data, chunk_max, repeats) => {
+
+    // ensures the chunk sizes is a multiple of 4
+    // (to avoid breaking Base64 encoding)
+    const chunk_size = rand_int (chunk_max / 4) * 4
+
+    // rand_int(...): generates a random integer
+    // random interger: between 0 and this calculated maximum
+    // - 24: reserves space for the header
+    // - chunk_size: ensures we don't select a position too close to the end
+    // + 24: shifts the position past the header
+    // (to only affect the actual image data)
+    // skipping the header (-24 +24):
+    // (damaging this would make the file unreadable)
+    // the +24 ensures we only modify the Base64-encoded image data
+    const i = rand_int (data.length - 24 - chunk_size) + 24
+
+    // slicing the data
+    // takes everything from the start (0) up to (but not including) position i
+    // preserves the header and unglitched portion
+    const front = data.slice (0, i)
+
+    // takes everything from i + chunk_size to the end
+    // skips over chunk_size bytes starting at position i
+    const back = data.slice (i + chunk_size, data.length)
+
+    // combines the two slices while omitting the middle chunk
+    // this is where the actual data corruption occurs
+    const result = front + back
+
+    // base case:
+    // (if repeats reaches 0, return the current glitched result)
+    // recursive case:
+    // (apply glitchify again to the already-glitched data)
+    return repeats == 0 ? result : glitchify (result, chunk_max, repeats - 1)
     }
 
-    //path to the self-portrait image
-    img.src = `w05s1/me.jpg`;
-
-    // generate a random number from 0 up to but not including max
-    // using Math.floor to round down to whole numbers
-    // this is a function that generates random integers between 0 and max -1
-    // math.random() genreates a random decimal between 0 and exclusive 1
-    const rand_int = max => Math.floor (Math.random () * max)
-
-    //
-    const glitchify = (data, chunk_max, repeats) => {
-        const chunk_size = rand_int (chunk_max / 4) * 4
-        const i = rand_int (data.length - 24 - chunk_size) + 24
-        const front = data.slice (0, i)
-        const back = data.slice (i + chunk_size, data.length)
-        const result = front + back
-        return repeats == 0 ? result : glitchify (result, chunk_max, repeats - 1)
-    }
-
+    // stores multiple glitched versions of the image for animation
     const glitch_arr = []
 
+    // creates multiple glitched versions of your original image
+    // and stores them in an array (glitch_arr)
     const add_glitch = () => {
-        const i = new Image ()
-        i.onload = () => {
-            glitch_arr.push (i)
-            if (glitch_arr.length < 12) add_glitch ()
-            else draw_frame ()
+
+      // creates a blank image object that we can load data into
+      const i = new Image ()
+
+      // When the image finishes loading (onload)
+      i.onload = () => {
+
+        // Adds the loaded image to glitch_arr
+        glitch_arr.push (i)
+
+        // Once 12 glitched versions are created
+        if (glitch_arr.length < 12) add_glitch ()
+
+        // it starts the animation loop (draw_frame)
+        else draw_frame ()
         }
-        i.src = glitchify (img_data, 96, 6)
+
+      // takes the original image data (img_data)
+      // applies the glitch effect using glitchify()
+      // chunk_max = 96 (maximum size of chunks to remove)
+      // repeats = 6 (how many times to repeat the glitch process)
+      i.src = glitchify (img_data, 96, 6)
     }
 
+    // state variables
+    // tracks if we're currently showing a glitch
     let is_glitching = false
+
+    // index of current glitch variant
     let glitch_i = 0
 
     const draw_frame = () => {
-        if (is_glitching) draw (glitch_arr[glitch_i])
-        else draw (img)
 
-        const prob = is_glitching ? 0.05 : 0.02
-        if (Math.random () < prob) {
-            glitch_i = rand_int (glitch_arr.length)
-            is_glitching = !is_glitching
-        }
+      // draw either glitched or normal image
+      // switching between glitched and normal
+      if (is_glitching) draw (glitch_arr[glitch_i])
+      else draw (img)
 
-        requestAnimationFrame (draw_frame)
-    }
+      // ? is the conditional (ternary) operator
+      // which is a shorthand way to write an if-else statement
+      // when is_glitching = true
+      // sets prob = 0.05
+      // (5% chance per frame to stop glitching)
+      // when is_glitching = false
+      // sets prob = 0.02
+      // (2% chance per frame to start glitching)
+      const prob = is_glitching ? 0.05 : 0.02
 
-    </script>
+      // compares the random number against prob
+      // a probability threshold
+      // if the random number is less than prob
+      // the condition is true
+      if (Math.random () < prob) {
+
+        // when the condition is true
+        // select a random index from your array of glitched images
+        glitch_i = rand_int (glitch_arr.length)
+
+        // !: logical NOT operator
+        // flip a boolean value
+        // toggles the value of is_glitching
+        // if is_glitching was true
+        // it becomes false
+        // vice versa
+        is_glitching = !is_glitching
+      }
+
+      // runs at ~60fps for smooth animation
+      // self-perpetuating loop
+      requestAnimationFrame (draw_frame)
+  }
+
+</script>
+```
 
 ---
 
 ![hw4b_2](/w05s1/hw4b_2.png)
 
----
+Rendering my likeness through glitch aesthetics produces a sense of effective complexity. I'm going to expand the dicussion from different perspectives:
 
-![hw4b_3](/w05s1/hw4b_3.png)
+1. **From Glitch Readings**
+
+   By corrupting my self-portrait with randomly deleted chunks of image data, the glitch effect destabilizes the image while still preserving its form. This intentional distortion transforms the portrait into an evolving, unstable self-representation. As Legacy Russell argues in Glitch Is Skin (2020), glitch is not error but “second skin”—a deliberate layer that invites alternative selves to emerge. In the same spirit, Rosa Menkman’s A Phenomenology of Glitch Art (2011) shows how glitches rupture information flow to reveal the medium’s materiality; my code’s “chunk-removal” makes that rupture visible.
+
+2. **Net Art Readings**
+
+   Ippolito’s Ten Myths of Internet Art (2002) celebrates the ongoing nature of net-based works, rejecting notions of a “finished” object. My animated portrait—constantly toggling between intact and corrupted frames—enacts this process-based ethos. Wolfe’s Reflections on Art and Posthumanism (2021) further situates the posthuman self as fragmented and networked, perfectly mirrored by a glitch that refuses a stable, singular identity.
+
+3. **The Concept of Effective Complexity**
+
+   Effective complexity thrives at the intersection of structure and chaos. By controlling chunk size, repetition count, and glitch-toggle probability, the portrait remains legible yet unpredictably corrupted.
+
+4. **Ngai's three aesthethic registers**
+
+   Sianne Ngai’s three registers capture the affective range of glitch:
+
+   - **Zany:**
+
+     The erratic flip between normal and corrupted frames channels hyperactive performance under pressure.
+
+   - **Cute:**
+
+     The twitching, almost playful corruption softens raw errors into an endearing, “glitchy pet.”
+
+   - **Interesting:**
+
+     Viewers lean in to decode the malfunction and wonder about the underlying algorithm.
 
 ---
 
@@ -339,7 +531,7 @@ If the artwork was recreated using JavaScript (recreated the endlessly scrolling
 
 ![hw5a_3](/w05s2/hw5a_3.png)
 
-Before writing my poem in English, I decided to write it in Chinese first, as it was easier for me to express myself fluently. I then translated the poem into English. The reason that I write poem first is because I think it will be more easier for me to code the poem if I have the content.
+Before coding the poem, I first drafted it in Chinese, where I can express myself most fluently, and then translated it into English. Having the text ready before I touched any code made it much easier to work with.
 
     《云的故障牧歌》
 
@@ -469,9 +661,9 @@ Here's the English version:
   btn.addEventListener("click", drawPoem);
 </script>
 
-This is the poem that I did via RiTa source. I was struggling at first because I didn't know how to utilize the RiTa methods in the Canvas API. But after I read through the resources than I found that set a rules is the very first things before generate the text or article and then through the rules you need to set a structure that could let the computer read and understand what is expected.
+Initially, I struggled to harness RiTa’s methods within the Canvas API, until I discovered that defining a clear set of rules is the essential first step. By establishing grammatical and structural rules up front, the generation engine can “understand” what I expect and assemble coherent lines.
 
-Beside that I also use the technique from the resource that I found that use clicking interaction to create the flipped page effect but this time I make it into a generate button that could generate different sentences and combine a varieties of poems combinations through clicking that button.
+I also borrowed a flipping-page interaction technique from the example that I found on Youtube that is using the [RiTa with p5js](https://www.youtube.com/watch?v=YO-OxXyceZs&t=88s) (here is the [code example](https://editor.p5js.org/shfitz/sketch...)) but instead of tying it to a page turn, I attached it to a “Generate” button. Each click recombines sentence fragments and rule-based patterns to produce a fresh poem, giving the user a playful, ever-shifting reading experience.
 
 ---
 
@@ -500,3 +692,7 @@ Beside that I also use the technique from the resource that I found that use cli
 - [Week 12](https://waikei1-creative-co-63.deno.dev/week12)
 
 ---
+
+```
+
+```
