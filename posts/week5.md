@@ -30,8 +30,8 @@ allow_math: true
 
 - [Homework](https://waikei1-creative-co-63.deno.dev/week5#homework)
 
-  - [Session 1: 1 Apr](https://waikei1-creative-co-63.deno.dev/week3#session-1-1-apr)
-  - [Session 2: 3 Apr](https://waikei1-creative-co-63.deno.dev/week3#session-2-3-apr)
+  - [Session 1: 1 Apr](https://waikei1-creative-co-63.deno.dev/week5#session-1-1-apr)
+  - [Session 2: 3 Apr](https://waikei1-creative-co-63.deno.dev/week5#session-2-3-apr)
 
 ---
 

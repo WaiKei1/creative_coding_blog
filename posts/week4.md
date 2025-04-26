@@ -21,8 +21,8 @@ allow_math: true
 
 - [Homework](https://waikei1-creative-co-63.deno.dev/week4#homework)
 
-  - [Session 1: 25 Mar](https://waikei1-creative-co-63.deno.dev/week3#session-1-25-mar)
-  - [Session 2: 27 Mar](https://waikei1-creative-co-63.deno.dev/week3#session-2-27-mar)
+  - [Session 1: 25 Mar](https://waikei1-creative-co-63.deno.dev/week4#session-1-25-mar)
+  - [Session 2: 27 Mar](https://waikei1-creative-co-63.deno.dev/week4#session-2-27-mar)
 
 ---
 
