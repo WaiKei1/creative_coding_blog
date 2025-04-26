@@ -86,7 +86,7 @@ The three.js example that I picked is [lights / spotlight](https://threejs.org/e
 
 Importing a Three.js model is pretty much the same as loading an image—you just need to use a bare specifier and double-check your file paths.
 
-To keep the 3D object from taking over my main post, I’ve given it its own entry. Feel free to check it out here: [Embedded Object](ttps://waikei1-creative-co-63.deno.dev/week1).
+To keep the 3D object from taking over my main post, I’ve given it its own entry. Feel free to check it out here: [Embedded Object](ttps://waikei1-creative-co-63.deno.dev/w6s1hw).
 
 ---
 
