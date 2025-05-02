@@ -24,7 +24,7 @@ allow_math: true
 - [Homework](https://waikei1-creative-co-63.deno.dev/week6#homework)
 
   - [Session 1: 8 Apr](https://waikei1-creative-co-63.deno.dev/week6#session-1-8-apr)
-  - [Session 2: 10 Apr](https://waikei1-creative-co-63.deno.dev/week3#session-2-10-apr)
+  - [Session 2: 10 Apr](https://waikei1-creative-co-63.deno.dev/week6#session-2-10-apr)
 
 ---
 
@@ -292,17 +292,17 @@ For this project, I experimented a lot with the math side — especially using r
 
 Here is a brief summary of the following articles:
 
-1. Information & Thinking by Michel Serres
+**1. Information & Thinking by Michel Serres**
 
 Serres is trying to say that everything that exists is information — the existence itself is information, and it's about how we read or interpret it. Humans, in the latest society, mainly deal with information through networking and digital networks. He claims that innovation is very precious and can be found through how we use and create with information. But passing information alone isn’t innovation — true thinking involves creating new ideas, not just transmitting data. Humans have always been networkers, from oral to written to digital times, but real invention and creativity come when we think beyond just the network and actively produce new connections and meanings.
 
-2. What Is It Like to Be A Fungus? by Merlin Sheldrake
+**2. What Is It Like to Be A Fungus? by Merlin Sheldrake**
 
 The author uses fungi as a metaphor to encourage us to rethink how we live and perceive intelligence. We often associate intelligence and skills with the brain, but the author points to an experiment involving slime molds—organisms without brains—that can find the most efficient path through obstacles. This challenges our traditional ideas about intelligence and suggests that it’s not just about the brain.
 
 The author also questions the concept of individuality, noting that humans are made up of a vast network of microbes, which play a significant role in our health. This suggests that the idea of a single, isolated individual is misleading, as we are part of a much larger system. This challenges our conventional understanding of what it means to be an individual.
 
-3. Xenofemenism: A Politics for Alienation by Laboria Cuboniks
+**3. Xenofemenism: A Politics for Alienation by Laboria Cuboniks**
 
 Xenofeminism is a community aiming for a more just and fair future. They talk about the unfairness and discrimination that comes from society creating rules tied to gender for a long time. They believe we should break away from these fixed ideas about gender. Xenofeminism argues that science and technology can help expand our freedom, because through advances like hormone therapy, we can invent new ways to move beyond the limits that nature and society have set for us. Importantly, they are not trying to erase the differences between genders, but instead are trying to break the social rules and labels that have been added to people based on gender. This is not a one-time change — it’s an ongoing and continuous process that pushes for a fairer, more equal future.
 
