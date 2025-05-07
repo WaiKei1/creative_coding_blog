@@ -26,8 +26,6 @@ allow_math: true
   - [RiTa.js Library](https://waikei1-creative-co-63.deno.dev/week5#ritajs-library)
   - [Base64](https://waikei1-creative-co-63.deno.dev/week5#base64)
 
-- [Group Task](https://waikei1-creative-co-63.deno.dev/week5#group-task)
-
 - [Homework](https://waikei1-creative-co-63.deno.dev/week5#homework)
 
   - [Session 1: 1 Apr](https://waikei1-creative-co-63.deno.dev/week5#session-1-1-apr)
@@ -197,25 +195,6 @@ If the input binary data isn’t divisible by 3, padding (=) fills the gap to ma
 **Why "64"**
 
 There are 64 possible characters in the Base64 alphabet (enough to represent 6 bits per character). Math: 2^6 = 64 (each character encodes 6 bits of binary data).
-
----
-
-# Group Task
-
-1.  ![gw1](/w05s1/gw1.png)
-
-**Explaination:**
-
-- declaring w2h (width to height) into 2 arguements (\_, i)
-
-- using the arrow function (a shorthand for writing function)
-
-- \_ : this argument is a placeholder for an unused parameter
-
-- i : the index of the current element
-
-- return [^3] `i * cnv.height / cnv.width`
-  [^3]: **return** is used to send values back from functions (serving a finished dish), without return is like recipes with no output (pointless)
 
 ---
 

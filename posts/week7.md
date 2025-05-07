@@ -1,7 +1,7 @@
 ---
 title: Week 7
 published_at: 2025-04-15
-snippet:
+snippet: shaders, moire and A2 draft
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -60,21 +60,99 @@ Example: A corrupted JPEG has random pixel blocks or a VHS tape skips violently.
 
 ![hw6b_1](/w07s1/hw6b_1.png)
 
+I looked into this as a tutorial reference
+
+<iframe id="homework6b: simple shader" src="https://editor.p5js.org/WaiKei1/full/U6MuO3gtg"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`homework6b: simple shader`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
+
 ---
 
 ![hw6b_2](/w07s1/hw6b_2.png)
+
+**A: pick three passages from the text that speak to you the loudest**
+
+> **“Slime molds... can find the shortest route through a maze, make decisions based on past experiences, and solve complex problems—all without a brain.”**
+
+This challenges the traditional idea that intelligence must be linked to a brain. It shows that fungi, despite not having a nervous system, can still solve problems and adapt to their environment. In a way, it proves that fungi have their own kind of intelligence—just not in the form we’re used to recognizing.
+
+(indicate fungi are smart - solve problems and adapt)
+
+---
+
+> **“Fungi form vast, branching networks of mycelium that weave through soil and wood, connecting and communicating across long distances.”**
+
+Fungi are far more present in our world than we usually notice. These mycelium networks stretch through the soil and forests, forming connections and even communicating over long distances. It suggests that fungi are not isolated organisms but part of a much larger, living system that surrounds and supports us.
+
+(Their mycelium networks spread everywhere, silently connecting and communicating across long distances)
+
+---
+
+> **“We are ecosystems, composed of and maintained by countless microbes. The idea of an individual starts to fray when viewed through the lens of microbial life.”**
+
+This makes me rethink what it means to be an individual. If our bodies are made up of and kept alive by trillions of microbes, can we really consider ourselves a single entity? It blurs the boundary between self and other and reminds us that life is much more interconnected than we might think.
+
+(Like fungal networks, we as individuals are made up of countless connections—microbial ecosystems that challenge the idea of being just one.)
+
+---
+
+**B: pick at least two techniques we have covered over the course of this unit:**
+
+I choose signal / envelopes and glitch techniques.
+
+---
+
+**C: combine the passages and techniques you have chosen into a rudimentary rough draft for your AT2.**
+
+_\* One more passage to support my idea_
+
+> **Fungi are metabolic wizards that can explore, scavenge, and salvage ingeniously, and their mycelial networks can fuse, fracture, and re-form**
+
+---
+
+**Summary of my idea**
+
+I want to create an abstract mycelial network that visualizes the life of fungi. The network will shift through different modes to represent each stage of fungal behavior: **scatter → fuse → fracture → reform**.
+
+Each mode highlights a different aspect of fungal intelligence showing how they move, connect, adapt, and grow. This network isn’t just about fungi, though. It reflects the idea of non-human intelligence, how something without a brain can still solve problems and communicate.
+
+At the same time, the entire cycle acts as a metaphor for how individuals are formed. Like fungi, we’re not just one thing—we’re made up of countless connections, microbial ecosystems, and invisible systems that shape who we are.
+
+**Techniques:**
+
+- I will use signals/envelopes to control the transitions between each stage of the network’s behavior—guiding the way forms scatter, come together, break apart, and reform smoothly or chaotically, mimicking natural processes.
+
+- I will incorporate glitch techniques to represent the moment of connection between different parts of the network. When new links form, they will visually bounce and glitch—creating a sense of unstable, flickering energy—as if the system is actively searching, reaching, and locking into new pathways.
 
 ---
 
 ![hw6b_3](/w07s1/hw6b_3.png)
 
----
-
 ![hw6b_4](/w07s1/hw6b_4.png)
+
+**Feedback Summary:**
+
+I think the way you’ve tied your piece to the text about fungi and non-human intelligence works really well. The idea that fungi can adapt and solve problems without a brain seems to connect perfectly to your approach with the shifting, interconnected mycelial network. The reference to microbial life further strengthens the idea of intelligence being more distributed than we usually think, which is spot on.
+
+It’s definitely post-digital! By incorporating glitch aesthetics, you’re showing how digital systems don’t always behave in the clean, predictable ways we expect. The glitching as the mycelial connections form makes the process of connection itself feel uncertain and unpredictable, which ties into the whole idea of technology’s chaotic nature. I like that you're not just using digital techniques for the sake of it, but to make a statement about how systems behave.
+
+I really like how you’re using chaotic aesthetics to express the complexity of the natural world. The mycelial network isn’t static—it’s constantly evolving. This mirrors nature's real complexity, where things aren't always easy to understand but work together in ways we can’t always predict. The glitch elements add to the unpredictability, but they don’t overwhelm the piece. You’ve found a good balance between chaos and coherence.
 
 ---
 
 ### Session 2: 17 Apr
+
+![hw7a_1](/w07s2/hw7a_1.png)
+
+---
+
+![hw7a_2](/w07s2/hw7a_2.png)
 
 ---
 
