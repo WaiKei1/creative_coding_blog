@@ -150,6 +150,26 @@ I really like how you’re using chaotic aesthetics to express the complexity of
 
 ![hw7a_1](/w07s2/hw7a_1.png)
 
+For my AT2 sound design, I’ll reflect the shifting phases of the fungi lifecycle using a chaotic sonic aesthetic. The phases are **scatter → fracture → reform → scatter**. The phases will loop continuously, showing how spores move, interact, and reorganize. Each stage will have its own looping sound environment. I’ve removed the “fuse” phase, as it felt too similar to “reform,” and I want each stage to feel distinct, both visually and sonically.
+
+I will create three looping sound environments, each designed to evoke a different quality of movement and transformation in the fungal system.
+
+- **Stage 1: Scatter – Calm Chaos**
+
+  This stage shows spores drifting randomly. The sound will be soft and ambient, like natural chaos—similar to **MyNoise Jungle or Fire**, with scattered textures and no strong structure. It represents calm unpredictability and sits between noise and sound, encouraging listeners to rethink how we hear “movement.”
+
+- **Stage 2: Fracture – Unstable Connections**
+
+  As the spores start glitching and bouncing to connect, the sound becomes sharper and tighter. I’ll use high-pitched glitches. It’s unstable and chaotic, showing the tension in making connections.
+
+- **Stage 3: Reform – Nervous Convergence**
+
+  Spores begin to come together and reposition. The sound here is nervous and fast, with twitchy rhythms and slight structure—but still unstable. It suggests a fragile order that never fully settles, showing how systems try to come together but remain in constant motion.
+
+In the sonic domain, chaos doesn’t mean total randomness—it means unpredictability within a system that still holds shape. That’s the essence of effective complexity, where the richness of the sound arises from its refusal to fully conform to order or dissolve into noise.
+
+By using sound to mirror fungal intelligence, I want to challenge traditional listening habits—blurring distinctions between noise and music, nature and machine, self and system. Through de-familiarisation (as Natalie Loveless discusses), I hope to reframe fungi as more than background organisms—inviting audiences to experience their agency and strangeness through shifting, layered, and unstable sounds.
+
 ---
 
 ![hw7a_2](/w07s2/hw7a_2.png)
