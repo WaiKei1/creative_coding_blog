@@ -6,16 +6,17 @@ disable_html_sanitization: true
 allow_math: true
 ---
 
-| [W1](https://waikei1-creative-co-63.deno.dev/week1) | [W2](https://waikei1-creative-co-63.deno.dev/week2) | [W3](https://waikei1-creative-co-63.deno.dev/week3) | [W4](https://waikei1-creative-co-63.deno.dev/week4) | [W5](https://waikei1-creative-co-63.deno.dev/week5) | [W7](https://waikei1-creative-co-63.deno.dev/week7) | [W8](https://waikei1-creative-co-63.deno.dev/week8) | [W9](https://waikei1-creative-co-63.deno.dev/week9) | [W10](https://waikei1-creative-co-63.deno.dev/week10) | [W11](https://waikei1-creative-co-63.deno.dev/week11) | [W12](https://waikei1-creative-co-63.deno.dev/week12) |
+| [W1](https://waikei1-creative-co-63.deno.dev/week1) | [W2](https://waikei1-creative-co-63.deno.dev/week2) | [W3](https://waikei1-creative-co-63.deno.dev/week3) | [W4](https://waikei1-creative-co-63.deno.dev/week4) | [W5](https://waikei1-creative-co-63.deno.dev/week5) | [W6](https://waikei1-creative-co-63.deno.dev/week6) | [W8](https://waikei1-creative-co-63.deno.dev/week8) | [W9](https://waikei1-creative-co-63.deno.dev/week9) | [W10](https://waikei1-creative-co-63.deno.dev/week10) | [W11](https://waikei1-creative-co-63.deno.dev/week11) | [W12](https://waikei1-creative-co-63.deno.dev/week12) |
 | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | [A1](https://waikei1-creative-co-63.deno.dev/A1)    | [A2](https://waikei1-creative-co-63.deno.dev/A2)    | [A3](https://waikei1-creative-co-63.deno.dev/A3)    |
 
 ### INDEX
 
-- [Notes](https://waikei1-creative-co-63.deno.dev/week6#notes)
+- [Notes](https://waikei1-creative-co-63.deno.dev/week7#notes)
 
   - [Shaders](https://waikei1-creative-co-63.deno.dev/week7#shaders)
   - [Moiré](https://waikei1-creative-co-63.deno.dev/week7#moiré)
+  - [Recursion](https://waikei1-creative-co-63.deno.dev/week7#recursion)
 
 - [Homework](https://waikei1-creative-co-63.deno.dev/week7#homework)
 
@@ -54,6 +55,44 @@ Example: A corrupted JPEG has random pixel blocks or a VHS tape skips violently.
 
 ---
 
+### Recursion
+
+Recursion is often used to break a big problem into smaller, similar sub-problem. (function calls itself to solve a problem)
+
+It is useful for solving problems that naturally involve repeating structure, like:
+
+- tree-like data
+- fractals and recursive art
+- navigate nested folders or web elements
+
+Every recursive function must have a base case-a condition that stops the recursion. Without it, the function would call itself forever and crash.
+
+**Example: Eating a Pizza Slice by Slice**
+
+Eat one slice at a time until there are none left.
+
+```javascript
+function eatPizza(slices) {
+  if (slices === 0) {
+    console.log("No more pizza! 🍽️");
+  } else {
+    console.log("Eating a slice... 🍕");
+    eatPizza(slices - 1); // call itself with one less slice
+  }
+}
+
+eatPizza(3);
+```
+
+It recursive as:
+
+- the function calls itself each time after eating a slice
+- it stop (the base case) when there are 0 slices left
+
+(Like asking "Do I still have pizza?" If yes then eat one and ask again, if no then stop eating)
+
+---
+
 # Homework
 
 ### Session 1: 15 Apr
@@ -75,6 +114,8 @@ I looked into this as a tutorial reference
 ---
 
 ![hw6b_2](/w07s1/hw6b_2.png)
+
+I choose **What Is It Like to Be A Fungus? by Merlin Sheldrake**.
 
 **A: pick three passages from the text that speak to you the loudest**
 
