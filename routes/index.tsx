@@ -1,42 +1,24 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
-import { getPost, getPosts, Post } from "@/utils/posts.ts";
-
-export const handler: Handlers<Post[]> = {
-  async GET(_req, ctx) {
-    const posts = await getPosts();
-    return ctx.render(posts);
-  },
-};
-
-export default function BlogIndexPage(props: PageProps<Post[]>) {
-  const posts = props.data;
+export default function Home() {
   return (
-    <main class="max-w-screen-md px-4 pt-16 mx-auto">
-      <h1 class="text-5xl font-bold">Welcome to Wai Kei's Blog</h1>
-      <div class="mt-8">
-        {posts.map((post) => (
-          <PostCard post={post} />
-        ))}
+    <main class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-white to-blue-200 px-4">
+      <div class="text-center max-w-screen-md">
+        <h1 class="text-5xl font-extrabold text-blue-700 mb-4">
+          Welcome to Wai Kei's Coding Blog
+        </h1>
+        <p class="text-lg text-gray-700 mb-6">
+          A place where I share my coding class adventures, projects, and fun
+          bugs I (accidentally) create
+        </p>
+        <a
+          href="/blog"
+          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-md"
+        >
+          Go to Blog
+        </a>
+        <p class="mt-10 text-sm text-gray-500">
+          Updated regularly with new lessons and experiments 💡
+        </p>
       </div>
     </main>
-  );
-}
-
-function PostCard(props: { post: Post }) {
-  const { post } = props;
-  return (
-    <div class="py-8 border(t gray-200)">
-      <a class="sm:col-span-2" href={`/${post.slug}`}>
-        <h3 class="text(3xl gray-900) font-bold">{post.title}</h3>
-        <time class="text-gray-500">
-          {new Date(post.publishedAt).toLocaleDateString("en-us", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
-        </time>
-        <div class="mt-4 text-gray-900">{post.snippet}</div>
-      </a>
-    </div>
   );
 }
