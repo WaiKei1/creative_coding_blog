@@ -1,6 +1,6 @@
 ---
 title: Week 9
-published_at: 2025-05-06
+published_at: 2025-05-01
 snippet:
 disable_html_sanitization: true
 allow_math: true
@@ -12,7 +12,7 @@ allow_math: true
 
 ### INDEX
 
-- [Notes](https://waikei1-creative-co-63.deno.dev/week6#notes)
+- [Notes](https://waikei1-creative-co-63.deno.dev/week9#notes)
 
 ---
 
@@ -22,11 +22,11 @@ allow_math: true
 
 # Homework
 
-### Session 1: 8 Apr
+### Session 1: 1 May
 
 ---
 
-### Session 2: 10 Apr
+### Session 2: 6 May
 
 ---
 

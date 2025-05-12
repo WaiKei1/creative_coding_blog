@@ -99,8 +99,6 @@ It recursive as:
 
 ![hw6b_1](/w07s1/hw6b_1.png)
 
-I looked into this as a tutorial reference
-
 <iframe id="homework6b: simple shader" src="https://editor.p5js.org/WaiKei1/full/U6MuO3gtg"></iframe>
 
 <script type="module">
@@ -210,10 +208,6 @@ I will create three looping sound environments, each designed to evoke a differe
 In the sonic domain, chaos doesn’t mean total randomness—it means unpredictability within a system that still holds shape. That’s the essence of effective complexity, where the richness of the sound arises from its refusal to fully conform to order or dissolve into noise.
 
 By using sound to mirror fungal intelligence, I want to challenge traditional listening habits—blurring distinctions between noise and music, nature and machine, self and system. Through de-familiarisation (as Natalie Loveless discusses), I hope to reframe fungi as more than background organisms—inviting audiences to experience their agency and strangeness through shifting, layered, and unstable sounds.
-
----
-
-![hw7a_2](/w07s2/hw7a_2.png)
 
 ---
 
