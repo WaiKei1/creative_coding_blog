@@ -1,7 +1,7 @@
 ---
 title: Week 8
-published_at: 2025-04-25
-snippet: continue to work on A2 (midsembreak)
+published_at: 2025-05-01
+snippet: Upgrade landing page, Collab Live coding, A3 Brainstorm
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -10,131 +10,163 @@ allow_math: true
 | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | [A1](https://waikei1-creative-co-63.deno.dev/A1)    | [A2](https://waikei1-creative-co-63.deno.dev/A2)    | [A3](https://waikei1-creative-co-63.deno.dev/A3)    |
 
+### INDEX
+
+- [Notes](https://waikei1-creative-co-63.deno.dev/week8#notes)
+
+  - [Communities of Practice](https://waikei1-creative-co-63.deno.dev/week8#communities-of-practice)
+  - [Mycelial Creativity](https://waikei1-creative-co-63.deno.dev/week8#mycelial-creativity)
+
+- [Homework](https://waikei1-creative-co-63.deno.dev/week8#homework)
+
+  - [Session 1: 1 May](https://waikei1-creative-co-63.deno.dev/week8#session-1-1-may)
+  - [Session 2: 6 May](https://waikei1-creative-co-63.deno.dev/week8#session-2-6-may)
+
+---
+
+# Notes
+
+### Communities of Practice
+
+Groups of people who share a concern or a passion for something they do and learn how to do it better as they interact regularly.
+
+They will share a specific area of interest (domain) and interact regularly which includes share knowledge, help each other and build relationship. Through this interaction, they will engage in shared activities to create resources or guides which can help them improve their practice together.
+
+It’s not just about having similar interests — it’s about actively learning from each other, building collective expertise, and contributing to shared knowledge over time.
+
+---
+
+### Mycelial Creativity
+
+Mycelial means underground fungal structure that are interconnected, decentralized and mutually supportive.
+
+It is a metaphor that describe creative network has a similar features - spreading ideas, growth, and making connections。
+
 ---
 
 # Homework
 
-![hw8_1](/w08/hw8_1.png)
+### Session 1: 1 May
 
-**What do you think she means by this?**
+![hw8a_1](/w08s1/hw8a_1.png)
 
-McKenzie Wark’s line, “Unlike the interesting, the zany really works against its constraint,” suggests that the zany is chaotic, playful, and unpredictable. While the “interesting” still invites exploration, it usually stays within a certain structure or frame. The zany, on the other hand, pushes beyond that—it’s like the interesting pushed to its limit, but with unexpected, sometimes ridiculous energy.
+I decided to upgrade my existing blog instead of starting a brand new one.
 
----
+After following the instructions, I moved all the code from the blog index file into a new file called blog.tsx. This means the index.tsx file is now free to be used as the main landing page, while the blog list can be accessed via /blog.
 
-**In what ways would you consider the chaotic and the zany to be similar? In what ways are they different?**
+For the landing page, I wanted to keep things simple with a minimalist style that would match with the blog page. At first, I created a very plain layout—just some centered content—but it felt too empty and a bit boring. So, I decided to play around with the background colour to give it more life, and this is what I ended up with:
 
-Zany and chaotic both feel messy, unexpected, and disorienting. They can overwhelm the audience or catch them off guard. But emotionally, they’re quite different: zany tends to be more funny, exaggerated, or even endearing, while chaos can feel uncomfortable, tense, or intense. Chaos lacks control, while zaniness performs the lack of control in an entertaining or absurd way.
+![landingpage](/w08s1/landingpage.png)
 
----
-
-**In what ways would you consider your AT2 to be zany? What might be some ways to make your AT2 more zany?**
-
-I’d say my AT2 project is already a bit zany—especially in the fracture stage. The spores don’t just connect peacefully—they bounce and glitch like they’re overperforming the act of connection. It feels dramatic and unnecessarily intense, which adds that zany energy. To make it even zanier, I could exaggerate those moments of failure—like spores trying too hard and missing, or glitching in a way that feels silly or frantic.
+I chose a blue tone for the background because it felt calming and clean, which fits the vibe I’m going for. The landing page includes a headline that says "Welcome to my blog," with a short description underneath that explains what the blog is about. Below that, I added a call-to-action button that takes visitors to the blog list page.
 
 ---
 
-![hw8_2](/w08/hw8_2.png)
+![hw8a_2](/w08s1/hw8a_2.png)
 
-**Examples of how and where it uses:**
+**5 Communities of Practice (CoPs):**
 
-**1. Variables**
+**1. UIUX Design Community**
 
-Variables are used throughout to store and track dynamic values such as `let mode = "scatter"`
-
----
-
-**2. Iteration**
-
-A for loop in p.setup() creates multiple spore objects:
-
-```javascript
-for (let i = 0; i < 50; i++) {
-  spores.push(new Spore(p.width / 2, p.height / 2));
-}
-```
+- **Domain:** User Experience Design, User Interface Design
+- **Repertoire:** Wireframing, prototyping, Figma
+- **Values:** Constructive feedback, knowledge sharing, inclusivity, and continuous learning.
+- Example activity: Members share work-in progress, tutorials, desgn resources, and get feedback or participate in portfolio review events.
 
 ---
 
-**3. Functions**
+**2. Web Development Community**
 
-Functions are being used through all the entire sketch.
-
-- p.setup(), p.draw(), p.mousdPressed
-- custom functions: handleFractureMode() and handleReformMode()
-- spore class also uses the custom methods `.update()` and `.display()`
+- **Domain:** Web Development (front-end/back-end)
+- **Repertoire:** HTML, CSS, Javascript, code reviews, debugging techniques
+- **Values:** Open-source contribution, peer support, clean code, collaboration.
 
 ---
 
-**4. Boolean logic**
+**3. Typography (Class-based)**
 
-- `if (!audioStarted) { ... }` to ensure audio only starts once
-- conditional statement (mode changes)
-
-```javascript
-  if (mode === "scatter") { ... }
-  else if (mode === "fracture") { ... }
-```
+- **Domain:** Typography, layout design, visual communication
+- **Repertoire:** grid systems, design critique, poster making, font anatomy
+- **Values:** Peer feedback, critique-based learning, design literacy.
 
 ---
 
-**5. Arrays**
+**4. Easy Food Sharing Community (quick & healthy meals)**
 
-- `let spores = [];` - spores arrat holds all individual spore objects
-
-- `p.random([255, 255, 0, 0])` - random colour selection
-
----
-
-**6. Classes**
-
-spore class
-
-```javascript
-class Spore {
-  constructor(x, y) { ... }
-  update() { ... }
-  display() { ... }
-}
-```
+- **Domain:** Sharing easy, healthy, and accessible home-cooked meals
+- **Repertoire:** Quick recipes, cooking hacks, photos and videos of meals, Sharing personal tips or regional flavors, Discussions around nutrition and affordability
+- **Values:** Inclusivity and simplicity in cooking, Encouragement of healthy habits, Cultural exchange and appreciation
 
 ---
 
-**7. Recursion**
+**5. Graphic Design & Photography Community**
 
-    A form of recursive structure is mimicked visually in the reform mode:
-
-    - The `lerp()` function slowly pulls spores toward each other over time, gradually forming connections.
-
-    As spores move closer, they create new connections, which visually resembles recursive network growth. The cyclical looping and spatial relationships create the recursive visual logic.
+- **Domain:** Visual communication through graphics or photography
+- **Repertoire:** Tools like Adobe Photoshop, Illustrator, Lightroom, Composition, color theory, typography, photo editing, Sharing portfolios, critiques, behind-the-scenes processes
+- **Values:** Aesthetic and storytelling through visuals, Constructive feedback and improvement, Creativity and personal expression, Sharing techniques and inspiration
 
 ---
 
-**How it responds to the chosen text**
+![hw8a_3](/w08s1/hw8a_3.png)
 
-My idea for A2 is inspired by these 4 chosen passages:
+For A3 I want to go with **UIUX Design Community**. This community is highly collaborative and often engages in feedback sessions where members review and critique each other’s work. Here’s one of my initial ideas based on this practice:
 
-> **“Slime molds... can find the shortest route through a maze, make decisions based on past experiences, and solve complex problems—all without a brain.”**
+### UIUX feedback generator
 
-> **“Fungi form vast, branching networks of mycelium that weave through soil and wood, connecting and communicating across long distances.”**
+This concept stems directly from the community itself—where feedback is a central part of the design process. But to make this idea more engaging, I thought it would be really fun to design a feedback generator that includes some light-hearted roasting, alongside typical constructive feedback.
 
-> **“We are ecosystems, composed of and maintained by countless microbes. The idea of an individual starts to fray when viewed through the lens of microbial life.”**
+**Why it’s interesting:** (From Ngai’s perspective)
 
-> **Fungi are metabolic wizards that can explore, scavenge, and salvage ingeniously, and their mycelial networks can fuse, fracture, and re-form**
+**Zany:** The unexpected, almost absurd mix of genuine feedback with playful roasting gives the experience a zany feel. It’s chaotic, energetic, and entertaining—much like the vibe of many creative design critiques, but exaggerated. The idea embraces humor and unpredictability, which could keep users engaged while also disarming the stress that often comes with receiving critique.
 
-The first three passages helped shape the concept behind my work. I wanted to highlight the intelligence of fungi—even though they don’t have a brain, they can solve complex problems and adapt based on past experiences. They also build massive, interconnected networks through mycelium, which can be compared to how microbes connect and sustain our own bodies as humans. It shows that we, too, are made up of networks, not just as individuals but as ecosystems.
+**Cute:** The interface could use rounded shapes, soft colors, and animated elements to make the tool feel more friendly and approachable. Even the roast feedback could be written in a way that’s cheeky but charming. This use of cuteness makes the critique process feel less intimidating and more like an encouraging interaction between friends.
 
-So I decided to represent that idea by visualising a mycelial network—how it grows, breaks, and comes together again. That part connects with the fourth quote, which specifically mentions the behaviour of fungi networks: they can scatter, fracture, and reform. That inspired the three-phase cycle in my work.
+**Interesting:** Beyond just being funny, the tool could encourage reflection on how feedback is perceived and delivered in the design process. By blending critique with humor, users might start to reconsider the emotional tone of traditional feedback, leading to more thoughtful engagement with critique culture.
 
 ---
 
-**Why you consider it to be post-digital**
+### Session 2: 6 May
 
-I'd consider my work to be post-digital because it doesn’t just use digital tools—it critically engages with them to explore deeper, entangled relationships between humans and nature.
+![hw8b_1](/w08s2/hw8b_1.png)
 
-In this project, the digital medium becomes a means to visualize the invisible intelligence of the mycelial network, not as a gimmick, but as a conceptual framework. The fungi's interconnected system acts as a metaphor for the complexity of human identity—challenging the idea of the individual as separate or isolated.
+For this live coding performance task, I teamed up with Jolie. Before we jumped into coding, we spent some time exploring the Hydra and Strudel websites to get familiar with the platforms and understand the basics.
 
-This approach aligns with post-digital thinking, where technology is no longer the focus, but a quiet, embedded layer that supports a more nuanced exploration of life, networks, and systems. It’s about shifting attention from the tools themselves to the ideas they help us uncover.
+We both agreed to keep things simple—we just wanted to play around and experiment with visuals and sounds rather than build something super complex. The goal was to enjoy the process and learn more about live coding together.
+
+During the session, we visited the following websites to help guide our coding:
+
+**1. Hydra**
+
+- [Hydra Book](https://hydra-book.glitch.me/#/)
+- [Hydra Sketch](https://hydra.ojack.xyz/?sketch_=&sketch_id=eerie_ear_2)
+
+**2. Strudel**
+
+- [Strudel Workshop](https://strudel.cc/workshop/first-sounds/)
+- [Strudel Examples](https://strudel.cc/)
+
+  \*CLICK SHUFFLE TO EXPLORE MORE CODE
+
+These resources helped us understand the syntax and structure of both Hydra and Strudel.
+
+- This is the final outcome - [Final Outcome](https://flok.cc/s/medieval-harlequin-krill-c9bbd374#)
+- Watch our performance - [Collab Live Coding Performance](https://www.youtube.com/watch?v=sXhukJ8WTfE)
+
+As mentioned in the video, I was in charge of the Strudel (sound) part. For the audio, I chose to recreate the classic piano piece "Für Elise". The reason I picked this song is because it’s one of my most memorable pieces from childhood—I clearly remember struggling to play it with my left hand when I was learning piano.
+
+---
+
+![hw8b_2](/w08s2/hw8b_2.png)
+
+[TOPLAP](https://blog.toplap.org/)
+
+[ICLC 2025(TOPLAP)](https://iclc.toplap.org/2025/)
+
+**- Domain:** The shared interest in live coding as both a creative and technical practice. This community explores coding as a real-time performance art, blending programming with music, visuals, and digital expression.
+
+**- Repertoire:** A wide range of platforms, tools, and coding environments—such as TidalCycles, Sonic Pi, and Hydra—enables coders to collaborate, perform, and learn from one another. These shared practices include improvisation, algorithmic thinking, and live performance.
+
+**- Values:** The community values inclusivity, experimentation, and open collaboration. It welcomes coders from all backgrounds across the internet, encouraging interaction, creativity, and the breaking of traditional boundaries between artist and audience.
 
 ---
 
@@ -163,7 +195,3 @@ This approach aligns with post-digital thinking, where technology is no longer t
 - [Week 12](https://waikei1-creative-co-63.deno.dev/week12)
 
 ---
-
-```
-
-```

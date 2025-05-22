@@ -1,6 +1,6 @@
 ---
-title: Week 10
-published_at: 2025-05-13
+title: Week 11
+published_at: 2025-05-20
 snippet:
 disable_html_sanitization: true
 allow_math: true
@@ -14,35 +14,19 @@ allow_math: true
 
 - [Notes](https://waikei1-creative-co-63.deno.dev/week10#notes)
 
-  - [Vibe Coding](https://waikei1-creative-co-63.deno.dev/week10#vibe-coding)
-
 ---
 
 # Notes
-
-### Vibe Coding
-
-Vibe Coding is a modern, flexible approach to programming that prioritizes intuition, creativity, and flow over rigid structure.
-
-It emphasizes feeling over rules which writing code that "feels right" rather than strictly following conventions
-
-TL;DR: Coding with flow intuition, and fun - not just strict logic.
 
 ---
 
 # Homework
 
-### Session 1: 13 May
-
-![hw9a_1](/w10s1/hw9a_1.png)
+### Session 1: 1 May
 
 ---
 
-![hw9a_2](/w10s1/hw9a_2.png)
-
----
-
-### Session 2: 15 May
+### Session 2: 6 May
 
 ---
 
