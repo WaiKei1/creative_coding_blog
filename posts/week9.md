@@ -1,7 +1,7 @@
 ---
 title: Week 9
 published_at: 2025-05-01
-snippet:
+snippet: Upgrade landing page, Collab Live coding, A3 Brainstorm
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -13,6 +13,14 @@ allow_math: true
 ### INDEX
 
 - [Notes](https://waikei1-creative-co-63.deno.dev/week9#notes)
+
+  - [Communities of Practice](https://waikei1-creative-co-63.deno.dev/week9#communities-of-practice)
+  - [Mycelial Creativity](https://waikei1-creative-co-63.deno.dev/week9#mycelial-creativity)
+
+- [Homework](https://waikei1-creative-co-63.deno.dev/week9#homework)
+
+  - [Session 1: 1 May](https://waikei1-creative-co-63.deno.dev/week9#session-1-1-may)
+  - [Session 2: 6 May](https://waikei1-creative-co-63.deno.dev/week9#session-2-6-may)
 
 ---
 
