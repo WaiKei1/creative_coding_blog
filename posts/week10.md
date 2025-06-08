@@ -1,5 +1,5 @@
 ---
-title: Week 11
+title: Week 10
 published_at: 2025-05-20
 snippet:
 disable_html_sanitization: true
@@ -17,6 +17,16 @@ allow_math: true
 ---
 
 # Notes
+
+### WebRTC
+
+WebRTC: Real-time communication for video, voice, or P2P data sharing.
+
+---
+
+### WebSockets
+
+WebSockets: Real-time, two-way messaging over a single connection (good for chat, notifications, live updates).
 
 ---
 
