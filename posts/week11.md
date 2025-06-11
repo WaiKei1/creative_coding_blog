@@ -16,6 +16,15 @@ allow_math: true
 
 ### Session 1: 22 May
 
+![hw11a_1](/w11s1/hw11_1.png)
+
+Click `Cmd + Shift + 5 %` at the same time to do screen recording.
+
+---
+
+![hw11a_2](/w11s1/hw11_2.png)
+![hw11a_3](/w11s1/hw11_3.png)
+
 ---
 
 ### Session 2: 29 May
@@ -25,6 +34,8 @@ allow_math: true
 #### A3 Progress
 
 My project is rooted in a Community of Practice I actively engage in — the UI/UX design community.
+
+---
 
 **Community of Practice**
 
