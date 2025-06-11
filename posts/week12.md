@@ -1,7 +1,7 @@
 ---
 title: Week 12
-published_at: 2025-05-27
-snippet:
+published_at: 2025-06-03
+snippet: INCLUSION
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -10,23 +10,23 @@ allow_math: true
 | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | [A1](https://waikei1-creative-co-63.deno.dev/A1)    | [A2](https://waikei1-creative-co-63.deno.dev/A2)    | [A3](https://waikei1-creative-co-63.deno.dev/A3)    |
 
-### INDEX
-
-- [Notes](https://waikei1-creative-co-63.deno.dev/week10#notes)
-
----
-
-# Notes
-
 ---
 
 # Homework
 
-### Session 1: 1 May
+### Last Session: 3 Jun
 
----
+![hw12](/w12s1/hw12.png)
 
-### Session 2: 6 May
+Definitely YES, it absolutely should.
+
+I’d say inclusion is a way to make the world better. When everyone has access to the latest technology, people from diverse backgrounds can bring fresh perspectives and unique ideas to how that technology is used and understood. This means innovation can come from many different voices, not just a select few who "discover" or control the tech first.
+
+Without inclusion, people are trapped in repeating what earlier generations or dominant groups have done, limiting creativity and progress. This cycle mirrors the **information cocoon** or **filter bubble effect** — where individuals only see and interact with ideas similar to their own, reinforcing existing patterns and biases.
+
+By embracing inclusion, creative coding helps break down these cocoons, allowing knowledge and creativity to flow freely between different communities. This creates a richer, more diverse digital culture that challenges dominant narratives and opens up new possibilities for learning, expression, and social change.
+
+Inclusion doesn’t just expand access — it expands the very nature of what we can create together.
 
 ---
 

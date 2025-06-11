@@ -14,7 +14,8 @@ allow_math: true
 
 - [Notes](https://waikei1-creative-co-63.deno.dev/week10#notes)
 
-  - [Notes](https://waikei1-creative-co-63.deno.dev/week10#WebRTC)
+  - [WebRTC](https://waikei1-creative-co-63.deno.dev/week10#webrtc)
+  - [WebSockets](https://waikei1-creative-co-63.deno.dev/week10#websockets)
 
 - [Homework](https://waikei1-creative-co-63.deno.dev/week10#homework)
 
