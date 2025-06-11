@@ -1,6 +1,6 @@
 ---
 title: Week 6
-published_at: 2025-04-8
+published_at: 2025-04-08
 snippet: Three.js
 disable_html_sanitization: true
 allow_math: true

@@ -1,6 +1,6 @@
 ---
 title: Week 9
-published_at: 2025-05-13
+published_at: 2025-05-08
 snippet:
 disable_html_sanitization: true
 allow_math: true
@@ -21,10 +21,10 @@ allow_math: true
   - [Understand AI fundamentals (tokens, context windows)](https://waikei1-creative-co-63.deno.dev/week9#understand-ai-fundamentals-tokens-context-windows)
   - [LLMs (Large Language Models)](https://waikei1-creative-co-63.deno.dev/week9#llms-large-language-models)
 
-- [Homework](https://waikei1-creative-co-63.deno.dev/week8#homework)
+- [Homework](https://waikei1-creative-co-63.deno.dev/week9#homework)
 
-  - [Session 1: 13 May](https://waikei1-creative-co-63.deno.dev/week9#session-1-13-may)
-  - [Session 2: 15 May](https://waikei1-creative-co-63.deno.dev/week9#session-2-15-may)
+  - [Session 1: 8 May](https://waikei1-creative-co-63.deno.dev/week9#session-1-8-may)
+  - [Session 2: 12 May](https://waikei1-creative-co-63.deno.dev/week9#session-2-12-may)
 
 ---
 
@@ -119,7 +119,7 @@ These are AI models trained on vast text/code dataset like Claude, GPT-4, and Ll
 
 # Homework
 
-### Session 1: 13 May
+### Session 1: 8 May
 
 ![hw9a_1](/w09s1/hw9a_1.png)
 
@@ -131,11 +131,39 @@ The response recommended using GitHub for version control and collaboration, and
 
 ---
 
-![hw9a_2](/w09s1/hw9a_2.png)
+### Session 2: 12 May
+
+![hw9b_1](/w09s2/hw9b_1.png)
+
+I chose **ComfyUI**. Here's a brief explaination of this GPL:
+
+**ComfyUI** is a graph-based (node-based) interface for creating and running image generation pipelines using Stable Diffusion models. It allows you to build complex generative art workflows without writing code — everything is done through connected visual nodes.
 
 ---
 
-### Session 2: 15 May
+![hw9b_2](/w09s2/hw9b_2.png)
+
+I found this tutorial playlist of this GPL.
+
+<iframe id="Tutorial" src="https://www.youtube.com/embed/videoseries?si=r2mD16Kx8QR38sqz&amp;list=PL-pohOSaL8P9kLZP8tQ1K1QWdZEgwiBM0" title="Final A3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script type="module">
+
+    console.log (`hello world! 🚀`)
+
+    const iframe  = document.getElementById (`Tutorial`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16
+
+</script>
+
+---
+
+![hw9b_3](/w09s2/hw9b_3.png)
+
+---
+
+![hw9b_4](/w09s2/hw9b_4.png)
 
 ---
 
