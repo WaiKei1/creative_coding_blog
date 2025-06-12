@@ -161,9 +161,53 @@ I found this tutorial playlist of this GPL.
 
 ![hw9b_3](/w09s2/hw9b_3.png)
 
----
-
 ![hw9b_4](/w09s2/hw9b_4.png)
+
+**Why I Chose ComfyUI**
+
+I chose ComfyUI because I’m deeply interested in generative art and how artificial intelligence can be harnessed creatively. As someone working in UI/UX and digital media, I often look for tools that enable visual experimentation and rapid prototyping without needing to write extensive code. ComfyUI offers a node-based visual interface to work with Stable Diffusion models, making it easier to explore the possibilities of image generation without diving deep into Python or command-line operations.
+
+**How I might use this GPL**
+
+As a digital media student focusing on UI/UX, I see ComfyUI as a tool that can be integrated into:
+
+- Moodboarding and visual prototyping for app design
+
+- Creating custom graphics for interfaces without relying on stock imagery
+
+- Exploring speculative design, by generating concept art for fictional futures or glitch-based visuals
+
+- Building assets for interactive installations or media art projects
+
+**ComfyUI vs Others**
+
+| Feature              | ComfyUI                   | TouchDesigner       | Unity Visual Scripting |
+| -------------------- | ------------------------- | ------------------- | ---------------------- |
+| Focus                | AI image generation       | Real-time visuals   | Game dev / logic       |
+| Learning Curve       | Moderate (model concepts) | Steep but rewarding | Beginner friendly      |
+| Extensibility        | High (custom nodes)       | Very High           | High                   |
+| Performance          | Depends on GPU            | GPU optimized       | CPU/GPU mix            |
+| Code-free experience | Fully visual              | Mostly visual       | Visual w/ scripting    |
+
+**Strengths & Weaknesses of ComfyUI**
+
+**Strengths:**
+
+- Intuitive node system for non-coders
+
+- Seamless integration with Stable Diffusion
+
+- Open-source and community supported
+
+- Customizable with new models and extensions
+
+**Weaknesses:**
+
+- Requires a powerful GPU to run smoothly
+
+- UI can feel cluttered with large workflows
+
+- Less flexibility for non-image tasks
 
 ---
 
