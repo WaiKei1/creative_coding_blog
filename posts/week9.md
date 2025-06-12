@@ -1,7 +1,7 @@
 ---
 title: Week 9
 published_at: 2025-05-08
-snippet:
+snippet: week9
 disable_html_sanitization: true
 allow_math: true
 ---

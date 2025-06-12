@@ -1,7 +1,7 @@
 ---
 title: Week 10
 published_at: 2025-05-15
-snippet:
+snippet: WebSockets and WebRTC
 disable_html_sanitization: true
 allow_math: true
 ---

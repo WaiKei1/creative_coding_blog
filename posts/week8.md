@@ -150,7 +150,32 @@ During the session, we visited the following websites to help guide our coding:
 These resources helped us understand the syntax and structure of both Hydra and Strudel.
 
 - This is the final outcome - [Final Outcome](https://flok.cc/s/medieval-harlequin-krill-c9bbd374#)
+
+<iframe id="Final outcome" src="https://flok.cc/s/medieval-harlequin-krill-c9bbd374#" title="Final A3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script type="module">
+
+    console.log (`hello world! 🚀`)
+
+    const iframe  = document.getElementById (`Final outcome`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16
+
+</script>
+
 - Watch our performance - [Collab Live Coding Performance](https://www.youtube.com/watch?v=sXhukJ8WTfE)
+
+<iframe id="Collab Live Coding Performance" src="https://www.youtube.com/embed/sXhukJ8WTfE?si=PLGPJ2qBNw3DiSIx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script type="module">
+
+    console.log (`hello world! 🚀`)
+
+    const iframe  = document.getElementById (`Collab Live Coding Performance`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16
+
+</script>
 
 As mentioned in the video, I was in charge of the Strudel (sound) part. For the audio, I chose to recreate the classic piano piece "Für Elise". The reason I picked this song is because it’s one of my most memorable pieces from childhood—I clearly remember struggling to play it with my left hand when I was learning piano.
 
