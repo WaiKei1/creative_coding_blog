@@ -130,6 +130,34 @@ This is the Tutorial Series that I found:
 
 </script>
 
+**Why chose Manim?**
+
+I chose Manim because it blends code with motion graphics — something I can use for presentations, portfolios, or storytelling. As a UI/UX student, I can see myself using it to prototype animated UI flows, explain user journeys, or visualize ideas.
+
+**How I might use it**
+
+- Creating animated case studies for UX design portfolios
+
+- Explaining processes (e.g., user journeys or design systems)
+
+- Visualizing feedback loops or interaction flow in a stylish way
+
+**Strengths of Manim**
+
+| Strengths                      | Weaknesses                               |
+| ------------------------------ | ---------------------------------------- |
+| Precise, programmable motion   | Steeper learning curve                   |
+| Reusable code & animations     | Slower workflow than drag-and-drop tools |
+| Great for education & diagrams | Not designed for real-time interactivity |
+
+**Scripting vs Compiled Languanges**
+
+| Scripting Languages             | Compiled Languages                    |
+| ------------------------------- | ------------------------------------- |
+| Faster prototyping              | Better performance                    |
+| Easier to debug                 | Stricter syntax & more error checking |
+| More flexible for creative work | More efficient for large systems      |
+
 ---
 
 ## Quick Links
