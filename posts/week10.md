@@ -114,6 +114,22 @@ And in doing so, I’m embracing the quiet power of mycelial creativity: small a
 
 ![hw10b](/w10s2/hw10b.png)
 
+I chose Manim (Python)
+
+This is the Tutorial Series that I found:
+
+<iframe id="Tutorial" src="https://www.youtube.com/embed/FlFEpb5GlZk?si=F8Z_WIWeJhBC6h1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script type="module">
+
+    console.log (`hello world! 🚀`)
+
+    const iframe  = document.getElementById (`Tutorial`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16
+
+</script>
+
 ---
 
 ## Quick Links
